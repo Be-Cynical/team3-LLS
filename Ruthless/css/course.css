@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #e4e9ec; */
+}
+
+/*顶部导航栏*/
+.nav{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    margin: 0 auto;
+    font-size: 14px;
+    position:fixed;/*固定在顶部*/
+    top:0;
+    left:0;
+}
+.nav div{
+    height: 100%;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+/* 导航栏左边部分 */
+.nav div .nav-left{
+    float: left;
+    margin-left: 300px;
+    width: 700px;
+    height: 40px;
+}
+.nav div .nav-left li{
+    float: left;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 18px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+.nav div .nav-left li a{
+    text-decoration: none;
+    color: #505050;
+}
+.nav div .nav-left li a:hover{
+    color: #49c0e0;
+}
+
+/* 导航栏右边部分 */
+.nav div .nav-right{
+    float: right;
+    height: 40px;
+    color: #505050;
+}
+.nav div .nav-right li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+.nav div .nav-right li:nth-child(1){
+    width: 20px;
+    margin-right: 5px;
+}
+.nav div .nav-right li:nth-child(1) img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+.nav div .nav-right li:nth-child(2){
+    width: 70px;
+}
+.nav div .nav-right li:nth-child(2) a{
+    text-decoration: none;
+    color: rgb(163, 163, 164);
+}
+/*鼠标移到用户名时背景变色未写*/
+.nav div .nav-right li:nth-child(3){
+    width: 104px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: #49c0e0;
+}
+.nav div .nav-right li:nth-child(3) .spana{
+    float: left;
+    height: 40px;
+    margin-right: 5px;
+}
+.nav div .nav-right li:nth-child(3) .spana img{
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+
+}
+.nav div .nav-right li:nth-child(3) .spanb{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+.nav div .nav-right li:nth-child(4){
+    width: 60px;
+}
+.nav div .nav-right li:nth-child(4) img{
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+}
+
+
+/* 侧边导航栏 */
+.nav-c{
+    position: fixed;
+    top: 0;
+    left: 37px;
+    width: 210px;
+    height: 100%;
+    background: #293039;
+}
+.nav-c .logo{
+    height: 38px;
+    padding: 4px 4px 2px 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.nav-c .title{
+    height: 40px;
+    font: 16px "微软雅黑";
+    color: #a3a3a3;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-c .title p{
+    position: absolute;
+    margin-top: 15px;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+
+}
+.nav-c .term{
+    margin-top: 10px;
+    background: #141a21;   
+    font: 14px "微软雅黑";
+    color: #f4f4f4;
+    text-align: center;
+    border: 2px solid rgb(101, 109, 118);
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.nav-c .term p{
+    width: 100%;
+    height: 30px;
+}
+.nav-c .term p span:nth-child(1){
+    float: left;
+    margin-left: 24px;
+    height: 100%;
+    line-height: 33px;
+}
+.nav-c .term p span:nth-child(2){
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+
+}
+.nav-c .term p span:nth-child(2) img{
+    width: 15px;
+    height: 15px;
+    margin-top: 7.5px;
+}
+
+
+/* 标题部分 */
+.header{
+    width: 100%;
+    margin-top: 40px;
+}
+.header .h-top{
+    height: 144px;;
+    line-height: 144px;;
+    background: linear-gradient(60deg, rgb(18, 199, 238), rgb(18, 199, 238));
+    color: #fff;
+}
+.header .h-top div{
+    width: 1100px;
+    margin: 0px auto;
+    position: relative;
+}
+.header .h-top div p{
+    position: absolute;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 56px;
+    left: 40%;
+    font-size: 30px;
+}
+.header .h-top div p span:nth-child(1){
+    float: left;
+    height: 28px;
+    width: 28px;
+    color: #fff;
+    margin-right: 10px;
+}
+.header .h-top div p span:nth-child(1) img{
+    width: 30px;
+}
+.header .h-top div p span:nth-child(2){
+    float: left;
+    height: 28px;
+
+}
+.header .h-bottom{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #e4e9ec;
+    color: #303030;
+    font-size: 14px;
+    overflow: hidden;
+}
+.header .h-bottom div{
+    margin-left: 267px;
+    height: 100%;
+    float: left;
+}
+.header .h-bottom span {
+    float: right;
+    color: #7b8086;
+    margin-right: 20px;
+    width: 200px;
+}
+
+/* 主体部分 */
+.main .main_nav {
+    margin-left: 248px;
+    width: 100%;
+    height: 53px;
+    background: rgb(255, 255, 255);
+    min-width: 1290px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    z-index: 50;
+}
+.main .main_nav .nav_ul {
+    margin-left: 20px;
+}
+.main #content #content1 video {
+    width: 800px;
+    height: 452px;
+}
+.main .main_nav .nav_ul>li {
+    float: left;
+    width: 130px;
+}
+.main .main_nav .nav_ul li {
+    list-style: none;
+}
+.main .main_nav .nav_ul .open {
+    width: 130px;
+    height: 49px;
+    border-width: 3px 1px 1px;
+    border-style: solid;
+    border-color: rgb(73, 192, 224) rgb(238, 238, 238) transparent;
+    float: left;
+    line-height: 45px;
+    text-align: center;
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+    background: rgb(244, 244, 245);
+    position: relative;
+}
+.main .main_nav .nav_ul .nav_span a {
+    width: 130px;
+    height: 49px;
+    float: left;
+    border-width: 3px 1px 0;
+    border-style: solid;
+    border-color: transparent transparent rgb(238, 238, 238);
+    line-height: 45px;
+    text-align: center;
+    color: rgb(186, 186, 186);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    background: rgb(255, 255, 255);
+}
+
+.main .main_nav #tab {
+  overflow: hidden;
+}
+
+.main .main_nav #tab li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 49px;
+  color: rgb(97, 97, 97);
+  text-decoration: none;
+}
+.main #content {
+    position: relative;
+    width: 1100px;
+    height: 452px;
+    background-color: blue;
+    margin-left: 268px;
+}
+.main #content1,#content2,#content3,#content4 {
+  display: none;
+}
+.main #content #content1 {
+    display: block;
+}
+.main #content .content1_left {
+    position: absolute;
+}
+.main #content .content1_right {
+    background-color: #0f0;
+    float: right;
+    width: 300px;
+    height: 452px;
+}
+.main #content .content1_right .content1_right_top {
+    width: 300px;
+    height: 50px;
+    background: rgb(247, 247, 247);
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: rgb(47, 58, 72);
+}
+.main #content #content1 .content1_right .content1_right_bottom div {
+    height: 40px;
+    margin-left: 60px;
+    line-height: 40px;
+}
+.main #content #content1 .content1_right .content1_right_bottom div>a {
+    text-decoration: none;
+}
+
+/*底部*/
+.footer {
+    width: 100%;
+    height: 126px;
+    background: url(../images/ditu.jpg);
+    padding-top: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.footer .bbox {
+    width: 600px;
+    margin: 0 auto;
+
+}
+.footer .bbox .b1 {
+    width: 600px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #afb0b2;
+    margin:0px 0px 8px 0px;
+    font: 16px "微软雅黑";
+
+}
+.footer .bbox .b1 img {
+    width: 200px;
+    height: 30px;
+    vertical-align: middle;
+}
+.footer .bbox .b1 .line {
+    color: #6c7177;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.footer .bbox .b2 {
+    width: 100%;
+    height: 25px;
+}
+.footer .bbox .b2 .bb1,.bb2,.bb3 {
+    font: 14px "微软雅黑";
+    color: #afb0b2;
+    text-decoration: none;
+}
+.footer .bbox .b2 .bb1 {
+    margin-left: 158px; 
+}
+.footer .bbox .b2 .bb2,.bb3 {
+    margin-left: 60px; 
+}
+.footer .bbox .b3 {
+    width: 600px;
+    height: 30px;
+    color: #6f7376;
+    font: 12px "微软雅黑";
+    text-align: center;
+    line-height: 30px;
+}

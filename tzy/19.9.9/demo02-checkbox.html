@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+  <div id="app">
+      <!-- 多选框 -->
+      <!-- el-checkbox-group 多选框组 -->
+      <!-- 多选框组绑定的值的类型 是一个Array (数组) -->
+      <!-- change事件 选中项发生改变时触发 绑定到el-checkbox-group 返回值 是当前用户复选项的选中值 -->
+    <el-checkbox-group @change="checkboxChange" v-model="checkList">
+        <el-checkbox label="复选项A">复选项1</el-checkbox>
+        <el-checkbox label="复选项B">复选项2</el-checkbox>
+        <el-checkbox label="复选项C">复选项3</el-checkbox>
+        <el-checkbox label="复选项D">复选项4</el-checkbox>
+        <el-checkbox label="复选项E">复选项5</el-checkbox>
+        <el-checkbox label="复选项F">复选项6</el-checkbox>
+    </el-checkbox-group>
+  </div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+            checkList:[
+                "复选项A",
+                "复选项F"
+            ]
+        }
+      },
+      methods:{
+          checkboxChange(val){
+            console.log(val);
+
+          }
+      }
+    })
+  </script>
+</html>

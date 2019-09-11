@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+  <div id="app">
+    <!-- inputNumber 计数器 -->
+    <el-input-number v-model="num1" placeholde="请输入数量" :min="1" :max="10" ></el-input-number>
+    <!-- 设置步长 step 加减数量 -->
+    <el-input-number v-model="num2" label="请输入数量" :min="1" :max="10" :step="2"></el-input-number>
+    <!-- 严格步长 step-strictly 规范了用户的输入-->
+    <el-input-number @change="change" v-model="num3" label="请输入数量" :min="1" :max="10" :step="2" step-strictly></el-input-number>
+  
+
+    
+</div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { 
+            num1:1,
+            num2:1,
+            num3:2
+        }
+      },
+      methods:{
+          change(val){
+                  console.log(val)
+
+          }
+      }
+    })
+  </script>
+</html>

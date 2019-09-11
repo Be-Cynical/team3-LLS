@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB", tahoma, Arial, sans-serif!important;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  顶部导航栏
+*/
+.nav{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    margin: 0 auto;
+    font-size: 14px;
+    position:fixed;/*固定在顶部*/
+    top:0;
+    left:0;
+}
+.nav div{
+    height: 100%;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+.nav div .logoImg{
+    float: left;
+    margin-left: 0;
+    width: 210px;
+    height: 40px;
+    background: #4abfe0;
+    padding: 4px 4px 2px 6px;
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.nav div .logpImg img{
+    height: 38px;
+}
+/* 导航栏左边部分 */
+.nav div .nav-left{
+    float: left;
+    margin-left: 5%;
+    height: 40px;
+}
+.nav div .nav-left li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    color: #505050;
+}
+.nav div .nav-left li a{
+    text-decoration: none;
+    color: #505050;
+}
+.nav div .nav-left li a:hover{
+    color: #1890ff;
+}
+
+/* 导航栏右边部分 */
+.nav div .nav-right{
+    float: right;
+    height: 40px;
+    color: #505050;
+}
+.nav div .nav-right li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+.nav div .nav-right li:nth-child(1){
+    width: 20px;
+    margin-right: 5px;
+}
+.nav div .nav-right li:nth-child(1) img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+.nav div .nav-right .li-a-bg{
+    width: 104px;
+    text-align: center;   
+}
+.nav div .nav-right .li-a-bg:hover{
+    background: rgba(187,224,255,0.3);
+}
+.nav div .nav-right .li-a-bg a{
+    text-decoration: none;
+    color: rgb(163, 163, 164);
+}
+/*鼠标移到用户名时背景变色未写*/
+.nav div .nav-right li:nth-child(3){
+    width: 104px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: #49c0e0;
+}
+.nav div .nav-right li:nth-child(3) .spana{
+    float: left;
+    height: 40px;
+    margin-right: 5px;
+}
+.nav div .nav-right li:nth-child(3) .spana img{
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+
+}
+.nav div .nav-right li:nth-child(3) .spanb{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+.nav div .nav-right li:nth-child(4){
+    width: 60px;
+}
+.nav div .nav-right li:nth-child(4):hover{
+    background: rgba(187,224,255,0.3);
+}
+.nav div .nav-right li:nth-child(4) img{
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+}
+
+
+/*
+  标题部分
+*/
+.header{
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+.header .h-box{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #6094f7, #68BEEF);
+    color: white;
+}
+
+
+/*
+  tab标签页切换
+*/
+.tab{
+    width: 100%;
+    background: #d8d8de;
+    transition: 0.3s;
+}
+.tab #tab-box{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background: #d8d8de;
+    box-sizing: border-box;
+}
+.tab #tab-box li{
+    float: left;
+    width: 30%;
+    list-style: none;
+    text-align: center;
+}
+.tab #tab-box li:nth-child(1){
+    margin-left: 5%;
+}
+.tab #tab-box li:nth-child(3){
+    margin-right: 5%;
+}
+.tab #tab-box li a{
+    display : block;
+    color: #303030;
+    text-decoration: none;
+}
+
+
+/*
+  main-中间内容
+*/
+#main{
+    width: 100%;
+    margin-top: 20px;
+}
+/*tab1 基本资料*/
+#main .m-box1{
+    height: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #606060;
+    font-family: arial;
+    font-weight: normal;
+}
+#main .m-box1 .m-b1-top{
+    height: 23px;
+    line-height: 23px;
+    text-align: left;
+    font-size: 18px;
+    border-left: 4px solid #4abfe0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+#main .m-box1 .tables{
+    margin: 10px 0 0 14px;
+}
+#main .m-box1 .tables div{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 8px;
+}
+#main .m-box1 .tables p{
+    float: left;
+    width: 49%;
+    border: 1px dashed #D3D3D3;
+    box-sizing: border-box;
+}
+#main .m-box1 .tables p:nth-child(1){
+    margin-right: 2%;
+}
+#main .m-box1 .tables p span{
+    float: left;
+}
+#main .m-box1 .tables p span:nth-child(1){
+    width: 130px;
+    background: #D3D3D3;
+    text-align: center;
+    border-right: 1px dashed #dedede;
+}
+#main .m-box1 .tables p span:nth-child(2){
+    padding-left: 37px;
+}
+/*tab2 修改资料*/
+#main .m-box2{
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #606060;
+    font-size: 14px;
+    font-family: arial;
+    font-weight: normal;
+}
+#main .m-box2 .m-b2-top{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    position: relative;
+}
+#main .m-box2 .m-b2-top strong{
+    padding: 0 5px;
+    font-weight: normal;
+    color: #aeaeb0;
+    letter-spacing: 2px;
+}
+#main .m-box2 .m-b2-top .strongLeft{
+    padding: 0 5px;
+    font-weight: normal;
+    color: #4ac0e0 !important;
+    letter-spacing: 2px;
+}
+#main .m-box2 .m-b2-top span{
+    width: 56px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #aeaeb0;
+}
+#main .m-box2 .m-b2-top .spanLeft{
+    color: #4ac0e0 !important;
+}
+#main .m-box2 .m-b2-bottom{
+    margin:10px auto;
+    width: 360px;
+    background: #fff;
+    box-sizing: border-box;
+}
+#main .m-box2 .m-b2-bottom p{
+    font-size: 14px;
+    color: #303030;
+    box-sizing: border-box;
+}
+#main .m-box2 .m-b2-bottom div input{
+    width: 360px;
+    height: 40px;
+    text-indent: 8px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#main .m-box2 .m-b2-bottom div input:hover{
+    border: 1px solid #4ac0e0;
+}
+#main .m-box2 .m-b2-bottom span{
+    font-size: 12px;
+    color: #acacac;
+    line-height: 0;
+    box-sizing: border-box;
+}
+#main .m-box2 .m-b2-bottom span i{
+    color: red;
+    padding-right:3px;
+    box-sizing: border-box;
+}
+#main .m-box2 .m-b2-bottom button{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #49c0e0;
+    border-radius: 5px;
+    margin-top: 28px;
+    border: none;
+}
+/*tab3 修改资料*/
+#main .m-box3{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #606060;
+    font-size: 14px;
+    font-family: arial;
+    font-weight: normal;
+}
+/*意见反馈部分*/
+#main .m-box3 .m-b3-top{
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    box-sizing: border-box;
+}
+#main .m-box3 .m-b3-top .b3-t-left{
+    float: left;
+    margin-top: 6px;
+    height: 23px;
+    line-height: 23px;
+    margin-left: 10px;
+    padding-left: 4px;
+    border-left: 4px solid #4abfe0;
+    font-size: 18px;
+}
+#main .m-box3 .m-b3-top .b3-t-right{
+    float: right;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    background: #4abfe0;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#main .m-box3 .m-b3-top .b3-t-right span{
+    height: 32px;
+    line-height: 32px;
+    margin-right: 3px;
+    vertical-align:middle;
+}
+#main .m-box3 .m-b3-top .b3-t-right img{
+    width: 16px;
+    height: 16px;
+    vertical-align:middle;
+}
+
+/*新建反馈部分*/
+#main .m-box3 .m-b3-top2{
+    margin: 10px 0 0 14px;
+    height: 500px;
+    box-sizing: border-box;
+    display:none;
+}
+#main .m-box3 .m-b3-top2 div{
+    width: 100%;
+    margin-top: 8px;
+}
+#main .m-box3 .m-b3-top2 div span:nth-child(1){
+    float: left;
+    width:9%;
+    text-align: right;
+    font-size: 16px;
+    color: #000;
+}
+#main .m-box3 .m-b3-top2 div span:nth-child(2){
+    float: left;
+    width: 91%;
+    text-align: left;
+}
+#main .m-box3 .m-b3-top2 div span:nth-child(1) i{
+    color: red;
+    margin-right: 2px;
+}
+/*问题分类*/
+#main .m-box3 .m-b3-top2 .t2-b-div1{
+    height: 35px;
+    line-height: 35px;
+}
+#main .m-box3 .m-b3-top2 .t2-b-div1 span:nth-child(1){
+    float: left;
+}
+#main .m-box3 .m-b3-top2 .t2-b-div1 span:nth-child(2){
+    float: left;
+}
+#main .m-box3 .m-b3-top2 .t2-b-div1 span:nth-child(2) select{
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+    color: #606060;
+    border: 1px solid #D3D3D3;
+    border-radius:5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+/* 意见 */
+#main .m-box3 .m-b3-top2 .t2-b-div2{
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+#main .m-box3 .m-b3-top2 .t2-b-div2 span:nth-child(2) input{
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    color: #606060;
+    border: 1px solid #D3D3D3;
+    border-radius:5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+/*问题说明*/
+#main .m-box3 .m-b3-top2 .t2-b-div3{
+    height: 230px;
+}
+#main .m-box3 .m-b3-top2 .t2-b-div3 span:nth-child(2) textarea{
+    width: 100%;
+    height: 230px;
+    padding: 10px;
+    color: #606060;
+    font-size: 14px;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+}
+/*提交按钮*/
+#main .m-box3 .m-b3-top2 .t2-b-div4{
+    height: 35px;
+    line-height: 35px;
+}
+#main .m-box3 .m-b3-top2 .t2-b-div4 span{
+    width: 100%;
+    height: 35px;
+    padding-left: 9%;
+    box-sizing: border-box;
+}
+#main .m-box3 .m-b3-top2 .t2-b-div4 span input{
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    background: #4abfe0;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/*意见、时间、状态、操作部分*/
+#main .m-box3 .m-b3-bottom{
+    margin: 10px 0 0 14px;
+    height: 500px;
+    display:block;
+}
+#main .m-box3 .m-b3-bottom div{
+    margin-top: 8px;
+}
+#main .m-box3 .m-b3-bottom div p{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+#main .m-box3 .m-b3-bottom div p span{
+    float: left;
+    text-align: center;
+}
+#main .m-box3 .m-b3-bottom div p span:nth-child(1){
+    width: 70%;
+    text-align: left;
+    box-sizing: border-box;
+}
+#main .m-box3 .m-b3-bottom .m-b3-b1 p span{
+    font-weight: bold;
+}
+#main .m-box3 .m-b3-bottom div p span:nth-child(2){
+    width: 10%;
+}
+#main .m-box3 .m-b3-bottom div p span:nth-child(3){
+    width: 10%;
+}
+#main .m-box3 .m-b3-bottom div p span:nth-child(4){
+    width: 10%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#main .m-box3 .m-b3-bottom .m-b3-b2 p .b2-span4 span{
+    float: left;
+    width: 50%; 
+    text-align: center;
+    color: #4abfe0;
+}
+#main .m-box3 .m-b3-bottom .m-b3-b2 p .b2-span4-b span{
+    float: left;
+    width: 100%; 
+    text-align: center;
+    color: #4abfe0;
+}
+#main .m-box3 .m-b3-bottom .m-b3-b2 p .b2-span4-b span:hover{
+    color: #fff;
+    background: #4abfe0;
+}
+#main .m-box3 .m-b3-bottom .m-b3-b2 p .b2-span4 span img{
+    height: 18px;
+    width: 18px;
+    padding-right: 2px;
+    box-sizing: border-box;
+}
+
+
+
+/*
+  底部
+*/
+.footer {
+    width: 100%;
+    height: 126px;
+    background: url(../images/ditu.jpg);
+    padding-top: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.footer .bbox {
+    width: 600px;
+    margin: 0 auto;
+
+}
+.footer .bbox .b1 {
+    width: 600px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #afb0b2;
+    margin:0px 0px 8px 0px;
+    font: 16px "微软雅黑";
+
+}
+.footer .bbox .b1 img {
+    width: 200px;
+    height: 30px;
+    vertical-align: middle;
+}
+.footer .bbox .b1 .line {
+    color: #6c7177;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.footer .bbox .b2 {
+    width: 100%;
+    height: 25px;
+}
+.footer .bbox .b2 .bb1,.bb2,.bb3 {
+    font: 14px "微软雅黑";
+    color: #afb0b2;
+    text-decoration: none;
+}
+.footer .bbox .b2 .bb1 {
+    margin-left: 158px; 
+}
+.footer .bbox .b2 .bb2,.bb3 {
+    margin-left: 60px; 
+}
+.footer .bbox .b3 {
+    width: 600px;
+    height: 30px;
+    color: #6f7376;
+    font: 12px "微软雅黑";
+    text-align: center;
+    line-height: 30px;
+}

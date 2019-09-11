@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=eddivge">
+    <title>Document</title>
+    <link rel="stylesheet" href="grzx.css">
+</head>
+<body>
+    <div>
+        <div class="fenlei">
+            <div class="fenlei-1">
+                <div class="fenlei-2">
+                    <ul class='ul1'>
+                        <li class="ol">我的专业</li>
+                        <li class="ol">我的课程</li>
+                        <li class="ol">我的成长</li>
+                        <li class="ol">我的参与</li>
+                        <li class="ol">我的考试</li>
+                    </ul>
+                </div>
+                <div class="fenlei-3">
+                    <ul>
+                        <li class='tixing'>
+                            <img src="./images/lingdang.png" alt="">
+                        </li>
+                        <li class="z-name">
+                            <a class='h-gename'>田佳俊</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='tuichu'>
+                    <img src="./images/tuichu.PNG" alt="">
+                </div>
+                <div class="tiwen">
+                    <img src="./images/xunwen.PNG" alt="">
+                    <span>在线提问</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="zhongxin">
+                <div class="zhongground">
+                    <span>个人中心</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="biaoqian">
+            <p class="ziliao" onclick='f()'>基本资料</p>
+            <p class='mima' onclick='s()'>修改密码</p>
+            <p class="fankui" onclick='t()'>意见反馈</p>
+        </div>
+        <div class="jianjie">
+            <div style="display:block;" id='first'>
+                <div class="ziliao1">
+                    <h2 class='zl'>基本资料</h2>
+                    <div class='jianjie1'>
+                        <div>
+                            <span class="one">
+                                <b class="cf2 b">姓名</b>
+                                <i class="cf2 i">11</i>
+                            </span>
+                            <span class="two">
+                                    <b class="cf2 b">学号</b>
+                                    <i class="cf2 i">11</i>
+                            </span>
+                        </div>
+                        <div>
+                                <span class="one">
+                                    <b class="cf2 b">专业</b>
+                                    <i class="cf2 i">11</i>
+                                </span>
+                                <span class="two">
+                                        <b class="cf2 b">web前端</b>
+                                        <i class="cf2 i">11</i>
+                                </span>
+                        </div>
+                        <div>
+                                <span class="one">
+                                    <b class="cf2 b">学校身份</b>
+                                    <i class="cf2 i">11</i>
+                                </span>
+                                <span class="two">
+                                        <b class="cf2 b">职场身份</b>
+                                        <i class="cf2 i">11</i>
+                                </span>
+                        </div>
+                        <div>
+                                <span class="one">
+                                    <b class="cf2 b">学校</b>
+                                    <i class="cf2 i">11</i>
+                                </span>
+                                <span class="two">
+                                        <b class="cf2 b">性别</b>
+                                        <i class="cf2 i">11</i>
+                                </span>
+                        </div>
+                        <div>
+                                <span class="one">
+                                    <b class="cf2 b">民族</b>
+                                    <i class="cf2 i">11</i>
+                                </span>
+                                <span class="two">
+                                        <b class="cf2 b">出生日期</b>
+                                        <i class="cf2 i">11</i>
+                                </span>
+                        </div>
+                        <div>
+                                <span class="one">
+                                    <b class="cf2 b">身份证号</b>
+                                    <i class="cf2 i">11</i>
+                                </span>
+                                <span class="two">
+                                        <b class="cf2 b">籍贯</b>
+                                        <i class="cf2 i">11</i>
+                                </span>
+                        </div>
+                        <div>
+                                <span class="one">
+                                    <b class="cf2 b">邮箱</b>
+                                    <i class="cf2 i">11</i>
+                                </span>
+                                <span class="two">
+                                        <b class="cf2 b">家庭电话</b>
+                                        <i class="cf2 i">11</i>
+                                </span>
+                        </div>
+                        <div>
+                                <span class="one">
+                                    <b class="cf2 b">手机</b>
+                                    <i class="cf2 i">11</i>
+                                </span>
+                                <span class="two">
+                                        <b class="cf2 b">入学时间</b>
+                                        <i class="cf2 i">11</i>
+                                </span>
+                        </div>
+                        <div class="jiating one">
+                                <b class="cf2 b">家庭住址</b>
+                                <i class="cf2 i">11</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style='display:none;' id='second'>
+                <div class="mima1">
+                    <div class='mima2'>
+                        <div class='h-input'>
+                            <div class="h-input-1">
+                                <p>请输入你的原密码</p>
+                                <div class="h-kipt">
+                                    <input type="password" class="h-ipt" placeholder="请输入你的原密码">
+                                </div>
+                                <p>请输入你的新密码</p>
+                                <div class="h-kipt">
+                                    <input type="password" class="h-ipt1" placeholder="请输入你的新密码">
+                                </div>
+                                <span>
+                                    <i style='color:rgb(251,79,69)'>*</i>
+                                    '密码为8-20位，必须使用大小写字母、数字与特殊符号的组合'
+                                </span>
+                                <div class='h-kipt'>
+                                    <input type="password" class="h-ipt" placeholder="请输入你的新密码">
+                                </div>
+                                <button class="btn">确认修改</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='mima3'></div>
+                </div>
+            </div>
+        </div>
+        <div class='foot'>
+            <div class="foot1">
+                <div class="foot1-1">
+                    <span class="logo">
+                    <img src="./images/logo.png" alt="">
+                    </span>
+                    <span class="logo1">
+                        培养能力 塑造人才
+                    </span>
+                </div>
+                <div class="foot1-2">
+                    <a href="">联系我们</a>
+                    <a href="">意见反馈</a>
+                    <a href="">名师风采</a>
+                </div>
+                <div class="foot1-3">
+                    Copyright 2017 联想 (北京) 有限公司 京ICP备11035381 | 京公网安备110108007970号
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        x=document.getElementById('first');
+        s=document.getElementById('second');
+        a=document.getElementById('third');
+       function f(){
+           if(x.display='none'){
+               x.display='block',
+                s.display='none';
+           }
+       }
+       function s(){
+           if(s.display='none'){
+            x.display='none',
+            s.display='block';
+           }
+       }
+       function t(){
+           if(s.display='none'){
+            x.display='none',
+            s.display='block';
+           }
+       }
+    </script>
+</body>
+</html>

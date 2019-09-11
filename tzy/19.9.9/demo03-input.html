@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 输入框 -->
+    <!-- 普通输入框 -->
+    <!-- change事件 输入框发生改变时触发 -->
+    <!-- @input事件 只要输入框内改变就记录到控制台 -->
+    <el-row>
+        <el-input @change="change" placeholder="清时输入您的用户名" v-model="input1"></el-input>
+    </el-row>
+
+    <!-- 可清空输入框 -->
+    <!-- 加入属性 claerable 即可成为可清空的输入框 -->
+    <el-row>
+        <el-input clearable placeholder="清时输入您的手机号" v-model="input2"></el-input>
+        <el-input clearable placeholder="清时输入您的密码" v-model="input3" show-password></el-input>
+    </el-row>
+
+    <!-- 文本域 -->
+    <!-- rows代表行数 若不设置行数 可以根据文本内容自适应 需添加属性 autosize -->
+    <el-row>
+        <el-input type="textarea" :rows="10" clearable placeholder="清时输入您的自我介绍" v-model="input4"></el-input>
+        <el-input type="textarea" autosize clearable placeholder="清时输入您的自我介绍" v-model="input5"></el-input>
+    </el-row>
+
+    <!-- 带icon图标的input -->
+    <!-- prefix-icon(样式首部 左边) -->
+    <!-- suffix-icon(样式尾部 右边) -->
+    <el-input prefix-icon="el-icon-search" placeholder="请输入日期" v-model="input6"></el-input><!-- 在首部有样式 -->
+    <el-input suffix-icon="el-icon-date" placeholder="请输入日期" v-model="input7"></el-input><!-- 在尾部有样式 -->
+
+    <!-- 第二种方式 -->
+
+    <el-input placeholder="请输入日期" v-model="input8">
+        <i slot="suffix" class="el-input__icon el-icon-search"></i>
+    </el-input>
+    <el-input placeholder="请输入日期" v-model="input9">
+        <i slot="prefix" class="el-input__icon el-icon-date"></i>
+    </el-input>
+</div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+            input1:"",
+            input2:"",
+            input3:"",
+            input4:"",
+            input5:"",
+            input6:"",
+            input7:"",
+            input8:"",
+            input9:""
+        }
+      },
+      methods:{
+          change(val){
+                  console.log(val)
+
+          }
+      }
+    })
+  </script>
+</html>

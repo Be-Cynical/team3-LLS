@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>培养能力,塑造人才</title>
+    <link rel="stylesheet" href="../css/course.css">
+</head>
+<body>
+    <div class="course">
+        <!-- 顶部导航栏 -->
+        <nav class="nav">
+            <div>
+                <ul class="nav-left">
+                    <li><a href="">我的专业</a></li>
+                    <li><a href="">我的课程</a></li>
+                    <li><a href="">我的成长</a></li>
+                    <li><a href="">我的参与</a></li>
+                    <li><a href="">我的考试</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><img src="../images/news.png" alt=""></li>
+                    <li><a href="">颜爽</a></li>
+                    <li>
+                        <span class="spana"><img src="../images/problem.png" alt=""></span>
+                        <span class="spanb">在线提问</span>
+                    </li>
+                    <li><img src="../images/quit.png" title="退出登录" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 侧边导航栏 -->
+        <div class="nav-c">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="title">
+                <p>WEB前端基础(HTML+CSS)</p>
+            </div>
+            <div class="term">
+                <p>
+                    <span>第五学期</span>
+                    <span><img src="../images/arrow.png" alt=""></span>
+                </p >
+            </div>
+        </div>
+
+        <!-- 课程标题标题部分 -->
+        <header class="header">
+            <div class="h-top">
+                <div>
+                    <p>
+                        <span><img src="../images/read.png" alt=""></span>
+                        <span>第一阶段 HTML基础(一)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="h-bottom">
+                <div>第一阶段 HTML基础(一)</div>
+                <span>返回></span>
+            </div>
+        </header>
+        
+        <!-- 主体部分 -->
+        <main class="main">
+            <div class="main_nav">
+                <ul id="tab" class="nav_ul">
+                    <li>
+                        <span class="open"><a href="#content1">我要上课</a></span>
+                    </li>
+                    <li>
+                        <span class="nav_span"><a href="#content2">查看教案</a></span>
+                    </li>
+                    <li>
+                        <span class="nav_span"><a href="#content3">我要备课</a></span>
+                    </li>
+                    <li>
+                        <span class="nav_span"><a href="#content4">添加习题</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="content1">
+                    <div class="content1_left">
+                        <video src="../videos/[AOA]短裙_bd.mp4" controls="controls" id="video1"></video>
+                        <video style="display: none;" src="../videos/clc 鬼怪.mp4" controls="controls" id="video2"></video>
+                        <video style="display: none;" src="../videos/EXO-M - MAMA (Chinese ver.)_w0029nad74x_3_0 [mqms].mp4" controls="controls" id="video3"></video>
+                    </div>
+                    
+                    <div class="content1_right">
+                        <div class="content1_right_top">视频播放列表</div>
+                        <div class="content1_right_bottom">
+                            <div><a href="#video1">视频1</a></div>
+                            <div><a href="#video2">视频2</a></div>
+                            <div><a href="#video3">视频3</a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="content2">
+                    
+                </div>
+                <div id="content3">
+                    
+                </div>
+                <div id="content4">
+                    
+                </div>
+            </div>
+        </main>
+
+
+        <!-- 底部栏部分 -->
+        <!-- <footer class="footer">
+            <div class="bbox">
+                <div class="b1">
+                    <span>
+                        <img src="../images/logo.png" alt="">
+                    </span>
+                    <span class="line">| </span>培养能力 塑造人才
+                </div>
+                <div class="b2">
+                    <a href="" class="bb1">联系我们</a>
+                    <a href="" class="bb2">意见反馈</a>
+                    <a href="" class="bb3">名师风采</a>
+                </div>
+                <div class="b3">Copyright 2017 联想 (北京) 有限公司 京ICP备11035381 | 京公网安备110108007970号</div>
+            </div>
+        </footer> -->
+    </div>
+</body>
+<script>
+    // 1.构建DOM树
+    // 2.查找绑定事件的元素
+    var spans = document.querySelectorAll('.main .main_nav .nav_ul span');
+    console.log(spans);
+    // 3.绑定事件
+    for (var i=0; i<spans.length; i++){
+        spans[i].onclick = function(){
+        // 4.查看修改的元素
+        // 5.修改样式
+            // 1.将样式封装在一个class名称中，直接修改元素的class名称
+            // 2.直接修改样式 span.style.height = 0;
+            // span.style.display = "none";
+            // span.style.marginTop = "20px";
+            if(this.className == "open"){  // 当前是展开的
+                this.className = "nav_span";
+            }else{  // 当前是关闭的
+                // 把之前已经打开的全部关闭
+                var open = document.querySelector(".open");
+                if(open){
+                    open.className = "nav_span";
+                }
+                this.className = "open";
+            }
+        }
+    }
+
+    //需求：当点击某一个标签的时候，下面对应的div显示，其他div隐藏
+    //查找触发事件的元素 a
+    var as = document.querySelectorAll(".main .main_nav #tab a");
+    //遍历
+    for(var i=0;i<as.length;i++){
+      //绑定事件处理函数
+      as[i].onclick=function(){
+        //隐藏其他的div
+        var divs=document.querySelectorAll("#content>div");
+        for(var i=0;i<divs.length;i++){
+          divs[i].style.display="none";
+        }
+        //让对应的div显示
+        //获得当前a的href
+        var i=this.href.lastIndexOf("#");
+        var id=this.href.slice(i);
+        console.log(id);
+        document.querySelector(id).style.display="block";
+      }
+    }
+
+    var vid = document.querySelectorAll(".main #content1 .content1_right .content1_right_bottom a");
+    console.log(vid);
+    for(var i=0;i<vid.length;i++){
+      vid[i].onclick=function(){
+        var vids=document.querySelectorAll(".main #content #content1 .content1_left>video");
+        console.log(vids);
+        for(var i=0;i<vids.length;i++){
+          vids[i].style.display="none";
+        }
+        var i=this.href.lastIndexOf("#");
+        var id=this.href.slice(i);
+        console.log(id);
+        document.querySelector(id).style.display="block";
+      }
+    }
+</script>
+</html>

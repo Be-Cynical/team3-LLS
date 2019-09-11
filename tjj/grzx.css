@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    -webkit-tap-highlight-color:rgb(0, 0, 0)
+}
+ol,ul{
+    margin-top: 0;
+    margin-bottom: 1em;
+    list-style:none outside none;
+}
+div{
+    display: block
+}
+.fenlei{
+    position: fixed;
+    top: 0;
+    z-index: 400;
+    width: 100%;
+    background: #fff;
+}
+.fenlei-1{
+    width: 1280px;
+    height: 40px;
+    background:white;
+    margin: 0 auto;
+    position: relative;
+}
+.fenlei-1 ul{
+    height: 100%;
+    width: 100%;
+}
+.fenlei-1 .ul1 li{
+    float: left;
+    margin: 0 18px;
+    height: 40px;
+    width: 64px;
+    text-align: center;
+    line-height: 40px;
+    color: #505050;
+    cursor: pointer;
+}
+.fenlei-2{
+    float: left;
+    margin-left: 300px;
+    height: 100%;
+    width: 700px;
+}
+.fenlei-3{
+    position: absolute;
+    right: 165px;
+    line-height: 40px;
+    color: #aeaeae;
+    height: 40px; 
+}
+.tixing{
+    cursor: pointer;
+    font-size: 16px;
+    width: 16px;
+    height: 40px;
+    float: left;
+    z-index: 20;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+.fenlei-3 img{
+    margin-top:10px;
+}
+.h-gename{
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    color: rgb(163, 163, 164);
+    height: 100%;
+}
+.z-name{
+    float: left;
+    padding-bottom: 2px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+}
+.z-name a{
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 70px;
+    text-align: center;
+    color: rgb(163, 163, 164);
+    height: 100%;
+}
+.tuichu{
+    float: right;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #bababa;
+    cursor: pointer;
+}
+.tuichu img{
+    width: 80%;
+    height:80%;
+    margin-top:6px;
+}
+.tiwen{
+    float: right;
+    height: 40px;
+    width: 120px;
+    background: #49c0e0;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #fff;
+    
+    position:relative;
+
+}
+.tiwen span {
+    margin-left:5px;
+}
+.tiwen img{
+    /* margin-top:9px; */
+    /* margin-left:-5px; */
+    top:9px;
+    left: 5px;
+    position: absolute;
+}
+.tiwen p{
+    font-size: 18px;
+    vertical-align: -1px;
+    margin-right: 4px;
+}
+.zhongxin{
+    height: 80px;
+    position: relative;
+    background-position: center;
+    background: #6094f7;
+    background-image: linear-gradient(45deg, #6094f7 0%, #68BEEF 100%);
+    top: 40px;
+}
+.zhongground{
+    background-size: 100%;
+    width: 100%;
+    margin: auto;
+    height: 80px;
+    position: absolute;
+}
+.zhongground span{
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+}
+.biaoqian{
+    height: 30px;
+    width: 1280px;
+    background: #d8d8de;
+    transition: 0.3s;
+    margin-top:10px;
+    position: relative;
+    top:40px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.biaoqian p {
+    float: left;
+    width: 50%;
+    line-height: 30px;
+    text-align: center;
+}
+.biaoqian1 span{
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    width: 50%;
+    display: inline-block;
+    height: 30px;
+}
+.ziliao{
+    background: #fff;
+    color: #303030;
+}
+.mima{
+    color: #909090;
+}
+.ziliao1{
+    margin-left: 124px;
+    margin-top: 40px;
+    min-height: 650px;
+}
+.zl{
+    font-size: 18px;
+    font-weight: normal;
+    width: 96px;
+    text-align: center;
+    line-height: 20px;
+    height: 23px;
+    border-left: 4px solid #4abfe0;
+    color: #606060;
+}
+.jianjie1{
+    margin-top: 10px;
+    margin-left: 14px;
+}
+.jianjie1 > div{
+    margin-top: 8px;
+    height: 40px;
+}
+.one , .two{
+    height: 40px;
+    line-height: 40px;
+}
+.one{
+    width: 509px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px dashed #dedede;
+    display: inline-block;
+}
+.two{
+    margin-left: 10px;
+    width: 509px;
+    font-size: 14px;
+    border: 1px dashed #dedede;
+    display: inline-block;
+
+}
+.cf2{
+    color: #606060;
+}
+.b{
+    height: 39px;
+    background: #f2f2f2;
+    float: left;
+    width: 130px;
+    font-family: arial;
+    border-right: 1px dashed #dedede;
+    border-bottom: 1px dashed #dedede;
+    text-align: center;
+    font-weight: normal;
+}
+.i{
+    font-family: arial;
+    font-style: normal;
+    padding-left: 37px;
+    float: left;
+    text-align: center;
+}
+.jiating{
+    width: 1034px;
+    border: 1px dashed #dedede;
+}
+.mima1{
+    min-height: 500px;
+}
+.mima2{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.h-input{
+    transform: translate(-50%, -50%);
+    margin-top: 0px !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 362px;
+    margin: 0 auto;
+}
+.h-input-1{
+    font-size: 14px;
+    color: #303030;
+    margin-bottom: 0px;
+    margin-top:110px
+}
+.h-kipt{
+    position: relative;
+}
+.h-ipt{
+    width: 362px;
+    height: 42px;
+    border: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-indent: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.h-ipt1{
+    width: 362px;
+    height: 42px;
+    border: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-indent: 8px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.h-input-1 span{
+    font-size: 12px;
+    color: #acacac;
+    line-height: 0;
+}
+.h-ipt{
+    margin-top: 15px;
+}
+.btn{
+    width: 362px;
+    height: 40px;
+    background-color: #49c0e0;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 28px;
+    border: none;
+}
+.foot{
+    width: 100%;
+    height: 126px;
+    background: url(./images/ditu.jpg);
+    padding-top: 30px;
+    bottom: 0;
+}
+.foot1{
+    width: 600px;
+    margin: 0 auto;
+}
+.logo{
+    color: #6c7177;
+    font-weight: 100;
+    margin-left: 50px;
+    margin-top:20px;
+    position: absolute;
+}
+.logo1{
+    color:#acacac;
+    font-size: 18px;
+    top:23px;
+    margin-left:270px;
+    position: relative;
+}
+.foot1-2{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    margin-top:35px;
+    margin-left:60px;
+}
+.foot1-2 a{
+    display: block;
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+    color: #afb0b2;
+    float: left;
+}
+.foot1-3{
+    position: absolute;
+    margin-top:70px;
+    color:#acacac;
+    margin-left:-50px;
+}

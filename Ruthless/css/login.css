@@ -1,0 +1,226 @@
+body {
+    background: url(../images/06denglu.jpg);
+    background-size: 100%;
+}
+
+.head {
+    width: 100%;
+    padding-top: 70px;
+}
+
+p.warningBox {
+    position: absolute;
+    height: 34px;
+    font-size: 14px;
+    line-height: 34px;
+    background-color: rgba(150, 164, 224, .17);
+    color: #eaedf9;
+    padding: 0 11px;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.top {
+    width: 240px;
+    margin: 0 auto;
+}
+
+.top .img {
+    width: 240px;
+    height: 70px;
+    background: url(./images/lenovo-learning.png) no-repeat center -42px;
+    background-size: 90%;
+    margin-top: 10px;
+}
+
+.top img {
+    height: 90%;
+    width: 90%;
+}
+
+.top p {
+    font-family: "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB";
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: -32px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.h-section {
+    width: 100%;
+    padding-top: 24px;
+    overflow: hidden;
+}
+
+.h-section .h-login {
+    width: 388px;
+    height: 275px;
+    background-color: #f2f7fa;
+    margin: 0 auto;
+    padding-top: 31px;
+}
+
+.h-section .h-login .h-number {
+    text-align: center;
+    color: #606060;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+html p {
+    margin-bottom: 0px;
+}
+
+.h-section .h-login .h-point {
+    width: 100%;
+    /* height: 20px; */
+    font-size: 12px;
+    color: #e2231b;
+    height: 36px;
+    line-height: 12px;
+    text-indent: 56px;
+    padding-top: 24px;
+}
+
+.h-section .h-login .h-user {
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e6e9;
+    overflow: hidden;
+}
+
+.h-section .h-login .h-user .h-colour {
+    color: #acafb1;
+    float: left;
+    height:30px;
+    width:10%;
+}
+
+.h-section .h-login .h-user .h-colour1 {
+    float: right;
+    width:90%;
+    height: 30px;
+}
+
+.h-section .h-login .h-user .h-colour img {
+    width: 100%;
+    height: 100%;
+}
+
+.h-section .h-login .h-user span {
+    color: #919598;
+    font-size: 22px;
+}
+
+.h-section .h-login .h-user input {
+    display: block;
+    width: 288px;
+    border: none;
+    height: 28px;
+    background-color: #f2f7fa;
+    color: #919598;
+    text-indent: 5px;
+}
+
+.h-section .h-login .h-user2 {
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e1e6e9;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.h-section .h-login .h-user2 .h-colour {
+    color: #acafb1;
+    float: left;
+    height:30px;
+    width:10%;
+}
+
+.h-section .h-login .h-user2 .h-colour1 {
+    float: right;
+    width:90%;
+    height: 30px;
+}
+
+.h-section .h-login .h-user2 .h-colour img {
+    width: 100%;
+    height: 100%;
+}
+
+.h-section .h-login .h-user2 input {
+    display: block;
+    width: 288px;
+    border: none;
+    height: 28px;
+    background-color: #f2f7fa;
+    color: #919598;
+    text-indent: 5px;
+}
+
+.h-section .h-login .h-entry {
+    width: 320px;
+    height: 36px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #49c0e0;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 16px;
+    border: 1px solid #49c0e0;
+    color: #feffff;
+    letter-spacing: 1px;
+}
+
+.h-section .h-login .h-retrieve {
+    text-indent: 15px;
+    font-size: 12px;
+    color: #909090;
+    line-height: 20px;
+}
+
+.h-section .h-login .h-retrieve p {
+    display: inline-block;
+}
+
+.h-section .h-login .h-retrieves {
+    margin-left: 125px;
+}
+
+.h-foot {
+    height: 72px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.14);
+    position: absolute;
+    bottom: 10px;
+    padding-top: 15px;
+}
+
+.h-foot p {
+    text-align: center;
+    line-height: 2.2;
+    color: #9196b3;
+    font-size: 12px;
+    font-family: "iconfont";
+}
+
+html p {
+    margin-bottom: 0px;
+}
+
+.h-foot p a {
+    margin: 0 43px;
+    color: #bebfd1;
+    font-size: 13px;
+}
+
+p {
+    margin-top: 0;
+}
