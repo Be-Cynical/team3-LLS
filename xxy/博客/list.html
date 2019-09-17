@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>   
+    <meta charset="UTF-8">
+    <title>文章列表</title>  
+    <link rel="stylesheet" href="packages/index.css">
+    <style>
+        /* 背景图样式 */
+        .img {
+            background: url(images/7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0 auto;
+            height: 800px;
+        }
+
+        /* 标题栏样式 */
+        .nav {
+            width: 80px;
+            background: #ebe9e9;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+            border-bottom: 3px solid rgb(165, 102, 180);
+            /* font-family: "Helvetica"; */
+            border-radius: 30px;
+            color: rgb(102, 98, 98);
+        }
+
+        /* 布局格式 */
+        .el-header {
+            width: 100%;
+        }
+
+        .el-footer {
+            color: rgb(163, 11, 143);
+            text-align: center;
+            line-height: 60px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .el-main {
+            color: #333;
+            text-align: center;
+            height: 650px;
+            line-height: 650px;
+        }
+
+        .main {
+            background: #ffffff46;
+            height: 100%;
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        .main1 {
+            background: #eb8bde44;
+            height: 95%;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .el-table {
+            /* background: #eb8bde44; */
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+<body class="img">
+    <div id="app">
+        <el-container>
+            <!-- 头部部分 -->
+            <el-header>
+                <el-row>
+                    <el-col class="nav" :span="3" :offset="7">
+                        <el-link href="index.html">首页</el-link>
+                    </el-col>
+                    <el-col class="nav" :span="3" :offset="1">
+                        <el-link href="list.html">文章列表</el-link>
+                    </el-col>
+                    <el-col class="nav" :span="3" :offset="1">
+                        <el-link href="login.html">登录</el-link>
+                    </el-col>
+                    <el-col class="nav" :span="3" :offset="1">
+                        <el-link href="register.html">注册</el-link>
+                    </el-col>
+                </el-row>
+            </el-header>
+            <el-container>
+                <el-main>
+                    <div class="main">
+                        <div class="main1">
+                            <template>
+                                <el-table :data="tableData" style="width: 100%">
+                                    <el-table-column prop="title" label="文章标题" width="450">
+                                    </el-table-column>
+                                    <el-table-column prop="data" label="日期" width="170">
+                                    </el-table-column>
+                                </el-table>
+                            </template>
+                        </div>
+                    </div>
+                </el-main>
+            </el-container>
+            <!-- 底部部分 -->
+            <el-footer>
+                <div style="height: 35px;width:80%;background: #63596850;color:#c2bcc1;margin: 0 auto">
+                    <el-span>gongyezhibao的博客 欢迎来踩哦</el-span>
+                </div>
+            </el-footer>
+
+        </el-container>
+    </div>
+</body>
+  
+<!-- import Vue before Element -->
+<script src="packages/vue.js"></script>
+<!-- import JavaScript -->
+<script src="packages/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                input1: '',
+                activeIndex: '1',
+                // src: 'i/b1.jpg',
+                // fits: 'contain',
+                url: 'i/f10.jpg',
+                tableData: [{
+                    title: '郁郁葱葱茎叶宽，屈伸藤蔓少纠缠。凌空展翅随风舞，妩媚多姿数吊蓝。杏花三月映阳台，吐翠含娇色未衰。觉醒率先收眼底，神清目爽醉心怀。日落长河，竹韵风清骚客去。(胡文汉)春回大地，花红柳绿玉人来。错了一个字：日落长河，竹韵风清骚客会。春回大地，花红柳绿彩蝶飞。亦可',
+                    data: '2019-05-02',
+                }, {
+                    title: '原野上错落有致地排列着一个又一个小村庄，村庄上弥漫着缕缕炊烟。房子里的人们烤着火喝着热茶，开心地围在一起下棋，其乐融融。或是受到了感染，我也变得快活起来。',
+                    data: '2019-05-02',
+                }, {
+                    title: '我们的孤独就像一条河流，外表温顺，唯有沉溺其中的人才懂得它的汹涌和澎湃。我们不敢任性也不敢撒娇。一不留神，就将自己活成了一棵沙漠仙人掌。劳碌奔波中，猛然发现——人生就如秋草渐黄，秋叶飘零，一切都将在岁月中老去，重归于尘，重归于土',
+                    data: '2019-05-02',
+                }, {
+                    title: '七夕这一天，牛郎织女的故事，每个人都能娓娓道来，可又敢问世人，世间情为何物。也许你住进某人的心里，也许另一个人把你请进了生命里，多少阴差阳错，造就是世上的悲欢离合，飞蛾扑火的爱情，上演了人间的心酸······',
+                    data: '2019-05-02',
+                }]
+            }
+        }
+    })
+
+</script>
+
+</html>

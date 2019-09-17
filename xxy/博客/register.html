@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>   
+    <meta charset="UTF-8">
+    <title>注册</title>  
+    <link rel="stylesheet" href="packages/index.css">
+    <style>
+        /* 背景图样式 */
+        .img {
+            background: url(images/7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            width: 100%;
+            margin: 0 auto;
+            height: 600px;
+        }
+
+        /* 布局格式 */
+        .el-header {
+            width: 100%;
+            line-height: 200px;
+        }
+
+        .el-footer {
+            color: rgb(163, 11, 143);
+            text-align: center;
+            line-height: 60px;
+            width: 100%;
+            margin-top: 35px;
+        }
+
+        .el-main {
+            text-align: center;
+            line-height: 150px;
+            width: 100%;
+        }
+
+        /* el-header下右边的登录 注册按钮 */
+        .el-header .el-button {
+            float: right;
+            margin-right: 20px;
+        }
+
+        /* el-main下的输入框  */
+        .el-main .el-input {
+            width: 250px;
+        }
+    </style>
+
+<body class="img">
+    <div id="app">
+        <el-container>
+            <!-- 头部部分 -->
+            <el-header>
+                <el-page-header @back="goBack" style="color:#ffffff" label="login.html">
+                </el-page-header>
+            </el-header>
+            <!-- 中间部分 -->
+            <el-main>
+                <h1 style="color: #ffffff;font-size: 40px">用户注册</h1>
+                <el-form>
+                    <el-form-item>
+                        <el-input placeholder="请输入用户名" prefix-icon="el-icon-user" v-model="input"></el-input>
+                    </el-form-item>
+                    <el-form-item>
+                        <el-input placeholder="请输入密码" prefix-icon="el-icon-lock" v-model="input1" show-password></el-input>
+                    </el-form-item>
+                </el-form>
+                <div style="margin-bottom: 50px"></div>
+
+            </el-main>
+            <!-- 底部部分 -->
+            <el-footer>
+                <div style="height: 35px;width:80%;background: #63596850;color:#c2bcc1;margin: 0 auto">
+                    <el-span>gongyezhibao的博客 欢迎来踩哦</el-span>
+                </div>
+            </el-footer>
+
+
+        </el-container>
+    </div>
+</body>
+  
+<!-- import Vue before Element -->
+<script src="packages/vue.js"></script>
+<!-- import JavaScript -->
+<script src="packages/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                input:'',
+                input1: '',
+                // activeIndex: '1',
+                // url: 'i/f10.jpg',
+
+
+            }
+        }
+        
+    })
+</script>
+
+</html>
