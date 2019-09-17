@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-header {
+            background-color: #B3C0D1;
+            color: #333;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .el-main {
+            background-color: #E9EEF3;
+            color: #333;
+            text-align: center;
+            line-height: 160px;
+        }
+
+        .el-row {
+            margin-bottom: 20px;
+        }
+
+        .el-col {
+            border-radius: 4px;
+        }
+
+        .bg-purple-dark {
+            background: #99a9bf;
+        }
+
+        .bg-purple {
+            background: #d3dce6;
+        }
+
+        .bg-purple-light {
+            background: #e5e9f2;
+        }
+
+        .grid-content {
+            border-radius: 4px;
+            min-height: 36px;
+        }
+
+        .row-bg {
+            padding: 10px 0;
+            background-color: #f9fafc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <el-row>
+                    <el-col :span="8">
+                        <div class="grid-content bg-purple">
+                            <img src="./images/lenovo.png" alt="">
+                        </div>
+                    </el-col>
+                    <el-col :span="8">
+                        <div class="grid-content bg-purple-light">
+                            <el-row :gutter="20">
+                                <el-col :span="4.8">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">我教的专业</el-link>
+                                    </div>
+                                </el-col>
+                                <el-col :span="4.8">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">我教的课程</el-link>
+                                    </div>
+                                </el-col>
+                                <el-col :span="4.8">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">考试管理</el-link>
+                                    </div>
+                                </el-col>
+                                <el-col :span="4.8">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">学员管理</el-link>
+                                    </div>
+                                </el-col>
+                                <el-col :span="4.8">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">我的贡献</el-link>
+                                    </div>
+                                </el-col>
+                            </el-row>
+
+                        </div>
+                    </el-col>
+                    <el-col :span="8">
+                        <div class="grid-content bg-purple">
+                            <el-row>
+                                <el-col :span="16">
+                                    <div class="grid-content bg-purple">
+                                        <el-row>
+                                            <el-col :span="8">
+                                                <div class="grid-content bg-purple"><i
+                                                        class="el-icon-message-solid"></i>
+                                                    <el-link :underline="false">张兴海</el-link>
+                                                </div>
+                                            </el-col>
+                                            <el-col :span="8">
+                                                <div style=" background: #49C0E0;display:inline-block;width: 80px;"
+                                                    class="grid-content bg-purple-light">
+                                                    <el-link :underline="false">在线提问</el-link>
+                                                </div>
+                                            </el-col>
+                                            <el-col :span="8">
+                                                <div class="grid-content bg-purple">
+                                                    <i class="el-icon-edit-outline"></i>
+                                                </div>
+                                            </el-col>
+                                        </el-row>
+                                    </div>
+                                </el-col>
+                                <el-col :span="8">
+                                    <div class="grid-content bg-purple-light">
+                                    </div>
+                                </el-col>
+                            </el-row>
+
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-header>
+            <el-main>
+                <el-row>
+                    <el-col :span="24">
+                        <div style="background: #63A2F5;color: #ffffff;" class="grid-content bg-purple-dark">个人中心</div>
+                    </el-col>
+                </el-row>
+                <div>
+                    <el-tabs v-model="activeName" @tab-click="handleClick">
+                        <el-tab-pane label="基本资料" name="first">基本资料</el-tab-pane>
+                        <el-tab-pane label="修改密码" name="second">修改密码</el-tab-pane>
+                        <el-tab-pane label="意见反馈" name="third">意见反馈</el-tab-pane>
+                    </el-tabs>
+                </div>
+            </el-main>
+        </el-container>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        }
+    })
+</script>
+
+</html>
