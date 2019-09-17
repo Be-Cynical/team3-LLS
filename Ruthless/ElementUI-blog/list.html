@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <title>主页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .el-textarea__inner {
+            background-color: orange;
+            outline: none;
+            border: none;
+            -webkit-appearance: none;
+        }
+
+        .el-link {
+            font-size: 16px;
+        }
+
+        .ul li span:nth-child(2) {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-backtop target=""></el-backtop>
+        <el-container>
+            <el-header style="height: 220px; background-color: #f0f; padding: 0;">
+                <el-row style="height: 40px; background-color: #0f0">
+                    <el-col :span="19">
+                        <el-link style="line-height: 40px; margin-left: 30px;" :underline="false" href="login.html">登录 /
+                        </el-link>
+                        <el-link style="line-height: 40px;" :underline="false" href="login.html">注册</el-link>
+                    </el-col>
+                    <el-col :span="5">
+                        <el-button type="text">Home</el-button>
+                        <el-button type="text">关于我们</el-button>
+                    </el-col>
+                </el-row>
+                <el-row style="height: 180px; background-color: #ff0">
+                    <img src="./i/f98.jpg" alt="" style="height: 180px; width: 100%;">
+                </el-row>
+            </el-header>
+            <el-main style="height: 800px; padding: 0; background-color: #00f;">
+                <el-row style="height: 43.6px; text-align: center; background-color: rgba(255, 251, 0, 0.767)">
+                    <el-col :span="4">
+                        <el-button type="text"> </el-button>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="index.html">我的首页
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">心情随笔
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="article.html">
+                            韶华追忆
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">技术分享
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="list.html">个人归档
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">书屋遨游
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">Blog留言
+                        </el-link>
+                    </el-col>
+                    <el-col :span="6">
+                        <el-button type="text"> </el-button>
+                    </el-col>
+                </el-row>
+                <el-row style="height: 756.4px;">
+                    <el-col :span="4" style="height: 756.4px; background-color: #f0f"></el-col>
+                    <el-col :span="13" style="height: 756.4px; background-color: orange">
+                        <el-row>
+                            <p style="font-size: 30px; font-weight: bold; text-align: center; margin-top: 20px;">个人归档
+                            </p>
+                        </el-row>
+                        <hr style="height: 1px; border: none; margin: 20px 20px; border-top: 1px dashed #ccc">
+                        <el-row>
+                            <div style="margin: 20px 20px; border: 1px dashed #fff; height: 500px;;">
+                                <ul class="ul"
+                                    style="list-style: none; margin: 20px 20px; height: 460px; line-height: 51px;">
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <el-link :underline="false">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </el-link>
+                                        </span>
+                                        <span>2019/05/17</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </el-row>
+                        <el-pagination style="margin-left: 361px;" background layout="prev, pager, next" :total="1000"
+                            @current-change="curChange" @prev-click="prevClick" @next-click="nextClick"></el-pagination>
+                    </el-col>
+                    <el-col :span="7" style="height: 756.4px; background-color: #0f0">
+                        <el-row style="font-size: 18px; margin: 20px 70px;">关于博主</el-row>
+                        <hr style="height: 1px; border: none; border-top: 1px dashed #ccc">
+                        <el-row style="font-size: 12px; margin: 20px 20px; width: 200px">
+                            描写荷塘的美文摘抄：又是一年荷塘色 初夏早上六点，清亮透明的月儿还躲藏在云朵里，不忍离去，校园内行人稀少，我骑着单车，晃晃悠悠的耷拉着星松的睡眼。校园内景色如常，照样是绿
+                        </el-row>
+
+                        <el-row style="font-size: 18px; margin: 20px 70px;">最新文章</el-row>
+                        <hr style="height: 1px; border: none; border-top: 1px dashed #ccc">
+                        <el-row>
+                            <ul style="font-size: 15px; margin: 20px 50px; width: 200px">
+                                <li>当父母是一种修行</li>
+                                <li>当儿子是一种炼化</li>
+                                <li>当爱人是一种折磨</li>
+                            </ul>
+                        </el-row>
+
+                        <el-row style="font-size: 18px; margin: 20px 70px;">友情链接</el-row>
+                        <hr style="height: 1px; border: none; border-top: 1px dashed #ccc">
+                        <el-row style=" width: 200px">
+                            <div style="margin: 20px 20px; width: 190px; height: 100px; background-color: #f0f;">
+                                <div style="font-size: 14px;">PHP Java Html CSS JS Node Vue</div>
+                            </div>
+                        </el-row>
+                    </el-col>
+                </el-row>
+            </el-main>
+            <el-footer style="height: 30px; text-align: center; background-color: #f00;">
+                © 2019 AllMobilize, Inc. Licensed under MIT license.
+            </el-footer>
+        </el-container>
+    </div>
+</body>
+
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+
+            }
+        },
+        methods: {
+            curChange(val) {    // 当前页码发生改变时触发
+                // console.log(val);
+            },
+            prevClick(val) {   // 点击上一页
+                console.log(val);
+            },
+            nextClick(val) {   // 点击下一页
+                console.log(val);
+            }
+        }
+    })
+</script>
+
+</html>

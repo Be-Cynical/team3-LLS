@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <title>主页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .el-textarea__inner {
+            background-color: orange;
+            outline: none;
+            border: none;
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-backtop target=""></el-backtop>
+        <el-container>
+            <el-header style="height: 220px; background-color: #f0f; padding: 0;">
+                <el-row style="height: 40px; background-color: #0f0">
+                    <el-col :span="19">
+                        <el-link style="line-height: 40px; margin-left: 30px;" :underline="false" href="login.html">登录 /
+                        </el-link>
+                        <el-link style="line-height: 40px;" :underline="false" href="login.html">注册</el-link>
+                    </el-col>
+                    <el-col :span="5">
+                        <el-button type="text">Home</el-button>
+                        <el-button type="text">关于我们</el-button>
+                    </el-col>
+                </el-row>
+                <el-row style="height: 180px; background-color: #ff0">
+                    <img src="./i/f98.jpg" alt="" style="height: 180px; width: 100%;">
+                </el-row>
+            </el-header>
+            <el-main style="height: 1500px; padding: 0; background-color: #00f;">
+                <el-row style="height: 43.6px; text-align: center; background-color: rgba(255, 251, 0, 0.767)">
+                    <el-col :span="4">
+                        <el-button type="text"> </el-button>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="index.html">我的首页
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">心情随笔
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">韶华追忆
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">技术分享
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="list.html">个人归档
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">书屋遨游
+                        </el-link>
+                    </el-col>
+                    <el-col :span="2">
+                        <el-link :underline="false" style="font-size: 18px; line-height: 43.6px;" href="#">Blog留言
+                        </el-link>
+                    </el-col>
+                    <el-col :span="6">
+                        <el-button type="text"> </el-button>
+                    </el-col>
+                </el-row>
+                <el-row style="height: 1456.4px;">
+                    <el-col :span="4" style="height: 1456.4px; background-color: #f0f"></el-col>
+                    <el-col :span="13" style="height: 1456.4px; background-color: orange">
+                        <el-row>
+                            <p style="font-size: 20px; font-weight: bold; margin: 20px 20px;">您现在的位置是:
+                                <el-button style="font-size: 18px;" type="text">首页</el-button> >
+                                <el-button style="font-size: 18px;" type="text">韶华追忆</el-button> >
+                            </p>
+                            <hr style="border: 2px solid #f00;">
+                        </el-row>
+                        <el-row>
+                            <div>
+                                <p style="font-size: 22px; margin: 10px 20px;">当父母是一种修行</p>
+                                <i class="el-icon-s-custom" style="margin-left: 20px;"> 猫颜i</i>
+                                <i class="el-icon-alarm-clock" style="margin-left: 20px;"> 2019-9-11 19:30:20</i>
+                            </div>
+                        </el-row>
+                        <el-row style="margin-top: 20px;">
+                            <p style="margin: 10px 20px; line-height: 35px; text-indent:2em;">
+                                我有时候会想，是否有人会比我对你还好。我想做的就是这样，试图去探索关于你的点滴。生活中没有什么大起大落，平平凡凡的细节中好多不能用文字准确的描绘，我只是想尽力书写自己内心真实的感受。但决心要写的时候脑袋里满满的却不知从何写起。
+                                岁月带走的是记忆，但回忆会越来越清晰。如果真的有一天，我回过头来告诉你，我一直在惦记你，千万不要怀疑，
+                                或许只是现实的枷锁，或白天黑夜交换了时差，让我们触手不及。我住在这个伤感的城市，而你却在那头看不见的城市，没有你的城市我只是独自一人。我把所有白纸写满你的名字，写满我对你的所有心事，我想把对你的惦念全部颠覆，让你知道这些都是事实。也正如你曾看过的：我们都是没有过去和未来的人，我们做的所有的事情，就是想找到我们和这个世界的联系，我们从哪里来，我们为什么会在这里，哪里才是我们的归宿。”</br>人生最苦痛的是梦醒了而我们却天各一方终难相聚。做梦的人是幸福的。</br>这个世界还有这样的一个你，只有你能让人回味，也只有你会让人心醉。
+                                假如人生不曾相遇，我不会相信，有一种人可以百看不厌，有一种人一认识就觉得温馨。假如情感可以解释，誓言可以修改。假如，你我的相遇，可以重新安排。那么，生活就会比较容易。假如有一天，我终于能将你忘记。然而，这不是随便传说的故事。也不是明天要上演的戏剧。我无法找出原稿，然后，将你一笔抹去。生命里的匆匆相遇，不求有结果，不求同行，不求曾经拥有，甚至不求你爱我，只求在我最美的年华里，遇到了你
+                                。
+                            </p>
+                        </el-row>
+                        <el-row><img src="./i/f96.jpg" alt="" style="width: 90%; height: 100%; margin-left: 40px;">
+                        </el-row>
+                        <el-row>
+                            <p style="font-size: 20px; font-weight: bold; margin: 20px 20px;">留下足迹</p>
+                            <el-input style="margin-left: 20px; width: 780px; border:2px solid red; border-radius: 5px;"
+                                type="textarea" placeholder="既然来了，留下你的金口玉言吧~" maxlength="100" :rows="5" show-word-limit>
+                            </el-input>
+                        </el-row>
+                        <el-row>
+                            <el-button style="margin-top: 20px; margin-left: 698px;" type="primary" round>畅言一下
+                            </el-button>
+                        </el-row>
+                        <el-row>
+                            <p style="font-size: 20px; font-weight: bold; margin: 20px 20px;">最新评论</p>
+                            <hr color=red style="width: 777px; margin-left: 20px;">
+                        </el-row>
+                    </el-col>
+                    <el-col :span="7" style="height: 1456.4px; background-color: #0f0">
+                        <el-row style="font-size: 18px; margin: 20px 70px;">关于博主</el-row>
+                        <hr style="height: 1px; border: none; border-top: 1px dashed #ccc">
+                        <el-row style="font-size: 12px; margin: 20px 20px; width: 200px">
+                            描写荷塘的美文摘抄：又是一年荷塘色 初夏早上六点，清亮透明的月儿还躲藏在云朵里，不忍离去，校园内行人稀少，我骑着单车，晃晃悠悠的耷拉着星松的睡眼。校园内景色如常，照样是绿
+                        </el-row>
+
+                        <el-row style="font-size: 18px; margin: 20px 70px;">最新文章</el-row>
+                        <hr style="height: 1px; border: none; border-top: 1px dashed #ccc">
+                        <el-row>
+                            <ul style="font-size: 15px; margin: 20px 50px; width: 200px">
+                                <li>当父母是一种修行</li>
+                                <li>当儿子是一种炼化</li>
+                                <li>当爱人是一种折磨</li>
+                            </ul>
+                        </el-row>
+
+                        <el-row style="font-size: 18px; margin: 20px 70px;">友情链接</el-row>
+                        <hr style="height: 1px; border: none; border-top: 1px dashed #ccc">
+                        <el-row style=" width: 200px">
+                            <div style="margin: 20px 20px; width: 190px; height: 100px; background-color: #f0f;">
+                                <div style="font-size: 14px;">PHP Java Html CSS JS Node Vue</div>
+                            </div>
+                        </el-row>
+                    </el-col>
+                </el-row>
+            </el-main>
+            <el-footer style="height: 30px; text-align: center; background-color: #f00;">
+                © 2019 AllMobilize, Inc. Licensed under MIT license.
+            </el-footer>
+        </el-container>
+    </div>
+</body>
+
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        }
+    })
+</script>
+
+</html>
