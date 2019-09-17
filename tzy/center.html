@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>培养能力,塑造人才</title>
+    <link rel="stylesheet" href="center.css">
+    <style>
+        .selected{
+            background: #fff;
+            color: #7c1717;
+        }
+    </style>
+</head>
+<body>
+    <div class="course">
+        <!-- 顶部导航栏 -->
+        <nav class="nav">
+            <div>
+                <div class="logoImg"><img src="../images/logo.png" alt=""></div>
+                <ul class="nav-left">
+                    <li><a href="#">我教的专业</a></li>
+                    <li><a href="">我教的课程</a></li>
+                    <li><a href="">考试管理</a></li>
+                    <li><a href="">学院管理</a></li>
+                    <li><a href="">我的贡献</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><img src="../images/news.png" alt=""></li>
+                    <li class="li-a-bg"><a href="">唐梓誉</a></li>
+                    <li>
+                        <span class="spana"><img src="../images/problem.png" alt=""></span>
+                        <span class="spanb">在线提问</span>
+                    </li>
+                    <li><img src="../images/quit.png" title="退出登录" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 课程标题标题部分 -->
+        <header class="header">
+            <div class="h-box">个人中心</div>
+        </header>
+
+        <!-- tab内容切换页 -->
+        <div class="tab">
+            <ul id="tab-box">
+                <li onclick="dj(0)"><a href="#">基本资料</a></li>
+                <li onclick="dj(1)"><a href="#">修改资料</a></li>
+                <li onclick="dj(2)" class="selected"><a href="#">意见反馈</a></li>
+            </ul>
+        </div>
+
+        <!-- 中间内容-课程详情 -->
+        <main id="main">
+            <!-- tab1标签页 基本资料 -->
+            <div class="m-box1" style="display: none">
+                <div class="m-b1-top">基本资料</div>
+                <div class="tables">
+                    <div>
+                        <p><span>姓名</span> <span>唐梓誉</span></p>
+                        <p><span>职位</span> <span>职业主播</span></p>
+                    </div>
+                    <div>
+                        <p><span>工号</span> <span>20172205113</span></p>
+                        <p><span>性别</span> <span>男</span></p>
+                    </div>
+                    <div>
+                        <p><span>出生日期</span> <span>1999-02-14</span></p>
+                        <p><span>身份证号</span> <span>*****************</span></p>
+                    </div>
+                    <div>
+                        <p><span>邮箱</span> <span>************@qq.com</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tab2标签页 修改资料 -->
+            <div class="m-box2" style="display: none">
+                <div class="m-b2-top">
+                    <strong class="strongLeft">---</strong>
+                    <span class="spanLeft">
+                        <img src="" alt="">修改密码
+                    </span>
+                    <strong class="strongLeft">---</strong>
+                    <strong>---</strong>
+                    <span>
+                        <img src="" alt="">完成
+                    </span>
+                    <strong>---</strong>
+                </div>
+                <div class="m-b2-bottom">
+                    <form action="">
+                            <p>请输入您的原密码</p>
+                            <div>
+                                <input type="password" placeholder="请在这里输入您的原密码" style="margin:10px 0;">
+                            </div>
+                            <p>请输入您的新密码</p>
+                            <div>
+                                <input type="password" placeholder="请在这里输入您的新密码" style="margin: 10px 0 5px 0;">
+                            </div>
+                            <span>
+                                <i>*</i>密码为8-20位，必须使用大小写字母、数字与特殊符号的组合
+                            </span>
+                            <div>
+                                <input type="password" placeholder="请在这里输入您的新密码" style="margin: 15px 0 10px 0;">
+                            </div>
+                            <button type="submit">确认修改</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- tab3标签页 意见反馈 -->
+            <div class="m-box3" style="display: block">
+                <div class="m-b3-top">
+                    <div class="b3-t-left">我的意见反馈</div> 
+                    <div class="b3-t-right">
+                        <span>新建反馈</span>
+                        <img src="../images/bj3.png" alt="">
+                    </div>
+                </div>
+                <div class="m-b3-bottom">
+                    <div class="m-b3-b1">
+                        <p>
+                            <span>意见</span>
+                            <span>发布时间</span>
+                            <span>状态</span>
+                            <span>操作</span>
+                        </p>
+                    </div>
+                    <div class="m-b3-b2">
+                        <p>
+                            <span>快写一首情歌雅俗共赏，打完字谜还要接着打榜</span>
+                            <span>2019-9-8 20:26</span>
+                            <span>未回复</span>
+                            <span class="b2-span4">
+                                <span><img src="../images/sc.png" alt=""> 删除</span>
+                                <span><img src="../images/bj2.png" alt=""> 编辑</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="m-b3-b2">
+                        <p>
+                            <span>如果胡同弄堂全都播放，气韵里居然添了些孤芳自赏</span>
+                            <span>2019-9-8 18:26</span>
+                            <span>未回复</span>
+                            <span class="b2-span4">
+                                <span><img src="../images/sc.png" alt=""> 删除</span>
+                                <span><img src="../images/bj2.png" alt=""> 编辑</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="m-b3-b12">
+                        <p>
+                            <span>落笔传神还要容易传唱，上得厅堂也下得厨房</span>
+                            <span>2019-9-8 18:26</span>
+                            <span>已回复</span>
+                            <span class="b2-span4">
+                                <span><img src="../images/sc.png" alt=""> 删除</span>
+                                <span><img src="../images/bj2.png" alt=""> 编辑</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="m-b3-b2">
+                        <p>
+                            <span>就像我一直在找的姑娘，快写一首情歌雅俗共赏</span>
+                            <span>2019-9-6 9:26</span>
+                            <span>已回复</span>
+                            <span class="b2-span4">
+                                <span><img src="../images/sc.png" alt=""> 删除</span>
+                                <span><img src="../images/bj2.png" alt=""> 编辑</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    <script>
+        var lis =  document.querySelectorAll("#tab-box>li");
+        var contents = document.querySelectorAll("#main>div");
+
+        function dj(index) {
+            for(var i=0;i<lis.length;i++){
+                if(i == index) {
+                    lis[i].className = 'selected';
+                    contents[i].style.display = 'block';
+                }else{
+                    lis[i].className = '';
+                    contents[i].style.display = 'none';
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
