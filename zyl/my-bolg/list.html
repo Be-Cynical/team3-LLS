@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>文章列表</title>
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <link rel="stylesheet" href="css/list.css">
+    </head>
+    <body>
+        <div id="app">
+            <!-- 顶部链接 -->
+            <el-row>
+                <el-col :span="6" class="nav">
+                    <el-link href="index.html" class="navLink">首页</el-link>
+                </el-col>
+                <el-col :span="6" class="nav">
+                    <el-link href="#" class="navLink" type="selection" style="color: mediumpurple">文章列表</el-link>
+                </el-col>
+                <el-col :span="6" class="nav">
+                    <el-link href="login.html" class="navLink" style="color:mediumpurple">登录</el-link>
+                </el-col>
+                <el-col :span="6" class="nav">
+                    <el-link href="register.html" class="navLink">注册</el-link>
+                </el-col>
+            </el-row>
+
+            <!-- 中间内容 -->
+            <el-row>
+                <!-- 左边个人中心 -->
+                <el-col :span="5" class="my-center">
+                    <el-row>
+                        <el-col :span="10" :offset="1" class="c-m-left">
+                            <el-image :src="url" class="c-leftImg"></el-image>
+                        </el-col>
+                        <el-col :span="9" class="c-m-center">
+                            <p class="m-c-p1">
+                                zyl<span>LV.6</span>
+                            </p>
+                            <p class="m-c-p2">
+                                修改资料<i class="el-icon-arrow-right"></i>
+                            </p>
+                        </el-col>
+                        <el-col :span="3" class="c-m-right">
+                            <i class="el-icon-message"></i>
+                        </el-col>
+                    </el-row>
+                    <el-row>
+                        <el-col :span="22" :offset="1" class="c-m-botom">
+                            <p class="m-b-p1">世间所有的相遇，都是久别重逢</p>
+                            <p class="m-b-p2">我不想成为一个庸俗的人。十年百年后，当我们死去，质疑我们的人同样死去，后人看到的是裹足不前、原地打转的你，还是一直奔跑、走到远方的我？</p>
+                        </el-col>
+                    </el-row>
+                </el-col>
+                <!-- 右边图文 -->
+                <el-col :span="19" class="m-right">
+                    <el-row>
+                        <el-col :span="24" class="m-r-top">
+                            <div class="m-r-topl"><i>所有文章</i></div>
+                            <div class="m-r-topr">my blog</div>
+                        </el-col>
+                        <el-col :span="24" class="m-r-center">
+                            <div class="listname" v-for="item in arr" :key="item.a">
+                                <div class="list-left">{{ item.b }}</div>
+                                <div class="list-right">{{ item.c }}</div>
+                            </div>
+                        </el-col>
+                        <el-col span="24" style="padding-left:200px;min-height:50px;line-height: 50px">
+                                <el-pagination background layout="prev, pager, next" :total="1000"></el-pagination>
+                        </el-col>
+                    </el-row>
+                </el-col>
+            </el-row>
+
+            <!-- 底部 -->
+            <el-row>
+                <el-col :span="24" class="footer">
+                    @2019 zyl blog Lorem ipsum dolor sit amet consectetur.</el-col>
+            </el-row>
+
+        </div>
+    </body>
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: function() {
+                return {
+                    url: 'images/user03.png',
+                    arr: [
+                        { a: 1 , b: "为什么罐装鲜橙汁的味道都一样", c: "2019-06-18"},
+                        { a: 2 , b: "香港第一课", c: "2019-03-27"},
+                        { a: 3 , b: "那个文科班的女孩子", c: "19-09-11"},
+                        { a: 4 , b: "垃圾分类是道智商题", c: "19-09-07"},
+                        { a: 5 , b: "理想国",c: "19-08-31"},
+                        { a: 6 , b: "为什么人一害羞脸就发红", c: "19-08-05"},
+                        { a: 7 , b: "胡萝卜不属于萝卜", c: "19-07-30"},
+                        { a: 8 , b: "去梦里吃一碗面",c: "19-09-08"}
+                        // { a: 9 , b: "公路上的黑科技", c: "19-09-02"},
+                        // { a: 10 , b: "宇宙是什么味道的",  c: "19-08-31"},
+                        // { a: 11 , b: "《权力的游戏》中的冰与火", c: "19-05-05"},
+                        // { a: 12 , b: "装在口袋里的电器", c: "19-04-08"},
+                        // { a: 13 , b: "吃鱼的讲究",c: "19-08-25"},
+                        // { a: 14 , b: "机智等", c: "19-09-07"},
+                        // { a: 15 , b: "德国的森林为何总相隔着草地",  c: "19-08-31"}
+                    ]
+                }
+            }
+        })
+    </script>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>培养能力,塑造人才</title>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="../packages/index.css">
+    <link rel="stylesheet" href="t-c-ElementUI.html.css">
+    <style>
+        .selected {
+            background: #fff;
+            color: #303030;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="course">
+            <!-- 顶部导航栏 -->
+            <nav class="nav">
+                <div>
+                    <div class="logoImg"><img src="../images/logo.png" alt=""></div>
+                    <ul class="nav-left">
+                        <li><a href="#">我教的专业</a></li>
+                        <li><a href="">我教的课程</a></li>
+                        <li><a href="">考试管理</a></li>
+                        <li><a href="">学院管理</a></li>
+                        <li><a href="">我的贡献</a></li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li><img src="../images/news.png" alt=""></li>
+                        <li class="li-a-bg"><a href="">张亚玲</a></li>
+                        <li>
+                            <span class="spana"><img src="../images/problem.png" alt=""></span>
+                            <span class="spanb">在线提问</span>
+                        </li>
+                        <li><img src="../images/quit.png" title="退出登录" alt=""></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- 课程标题标题部分 -->
+            <header class="header">
+                <div class="h-box">个人中心</div>
+            </header>
+
+            <!-- tab内容切换页 -->
+            <div class="tab">
+                <el-tabs type="border-card">
+                    <!-- tab1标签页 基本资料 -->
+                    <el-tab-pane label="基本资料">
+                        <div class="m-box1">
+                            <div class="m-b1-top">基本资料</div>
+                            <div class="tables">
+                                <div>
+                                    <p><span>姓名</span> <span>张亚玲</span></p>
+                                    <p><span>职位</span> <span>学生</span></p>
+                                </div>
+                                <div>
+                                    <p><span>工号</span> <span>20192205129</span></p>
+                                    <p><span>性别</span> <span>女</span></p>
+                                </div>
+                                <div>
+                                    <p><span>出生日期</span> <span>2019-10-01</span></p>
+                                    <p><span>身份证号</span> <span>152527**********24</span></p>
+                                </div>
+                                <div>
+                                    <p><span>邮箱</span> <span>2875079301@qq.com</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </el-tab-pane>
+
+                    <!-- tab2标签页 修改资料 -->
+                    <el-tab-pane label="修改资料">
+                        <div class="m-box2">
+                            <div class="m-b2-top">
+                                <strong class="strongLeft">---</strong>
+                                <span class="spanLeft">
+                                    <img src="" alt="">修改密码
+                                </span>
+                                <strong class="strongLeft">---</strong>
+                                <strong>---</strong>
+                                <span>
+                                    <img src="" alt="">完成
+                                </span>
+                                <strong>---</strong>
+                            </div>
+                            <div class="m-b2-bottom">
+                                <form action="">
+                                    <p>请输入您的原密码</p>
+                                    <div>
+                                        <input type="password" placeholder="请在这里输入您的原密码" style="margin:10px 0;">
+                                    </div>
+                                    <p>请输入您的新密码</p>
+                                    <div>
+                                        <input type="password" placeholder="请在这里输入您的新密码" style="margin: 10px 0 5px 0;">
+                                    </div>
+                                    <span>
+                                        <i>*</i>密码为8-20位，必须使用大小写字母、数字与特殊符号的组合
+                                    </span>
+                                    <div>
+                                        <input type="password" placeholder="请在这里输入您的新密码" style="margin: 15px 0 10px 0;">
+                                    </div>
+                                    <button type="submit">确认修改</button>
+                                </form>
+                            </div>
+                        </div>
+                    </el-tab-pane>
+
+                    <!-- tab3标签页 意见反馈 -->
+                    <el-tab-pane label="意见反馈">
+                        <div class="m-box3">
+                            <div class="m-b3-top">
+                                <div class="b3-t-left">我的意见反馈</div>
+                                <div class="b3-t-right">
+                                    <span class="spanText">新建反馈<span>
+                                            <img src="../images/bj3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="m-b3-top2">
+                                <form action="">
+                                    <div class="t2-b-div1">
+                                        <span><i>*</i>问题分类：</span>
+                                        <span>
+                                            <select>
+                                                <option value="">用户体验</option>
+                                                <option value="非常好">非常好</option>
+                                                <option value="好">好</option>
+                                                <option value="一般">一般</option>
+                                                <option value="较差">较差</option>
+                                                <option value="非常差">非常差</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                    <div class="t2-b-div2">
+                                        <span><i>*</i>意见：</span>
+                                        <span><input type="text" maxlength="60" placeholder="请在这里输入你的问题(60字符以内)"></span>
+                                    </div>
+                                    <div class="t2-b-div3">
+                                        <span>问题说明：</span>
+                                        <span><textarea name="" id="" cols="100" rows="15"
+                                                placeholder="问题背景、条件等详细信息"></textarea></span>
+                                    </div>
+                                    <div class="t2-b-div4">
+                                        <span><input type=" submit" value="提交反馈"></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="m-b3-bottom">
+                                <div class="m-b3-b1">
+                                    <p>
+                                        <span>意见</span>
+                                        <span>发布时间</span>
+                                        <span>状态</span>
+                                        <span>操作</span>
+                                    </p>
+                                </div>
+                                <div class="m-b3-b2">
+                                    <p>
+                                        <span class="b2-span1">Lorem ipsum dolor sit amet.</span>
+                                        <span class="b2-span2">2019-9-8 20:26</span>
+                                        <span class="b2-span3">未回复</span>
+                                        <span class="b2-span4">
+                                            <span><img src="../images/sc.png" alt=""> 删除</span>
+                                            <span><img src="../images/bj2.png" alt=""> 编辑</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="m-b3-b2">
+                                    <p>
+                                        <span class="b2-span1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Cum,
+                                            ullam!</span>
+                                        <span class="b2-span2">2019-9-8 18:26</span>
+                                        <span class="b2-span3">未回复</span>
+                                        <span class="b2-span4">
+                                            <span><img src="../images/sc.png" alt=""> 删除</span>
+                                            <span><img src="../images/bj2.png" alt=""> 编辑</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="m-b3-b2">
+                                    <p>
+                                        <span class="b2-span1-b" style="height:40px;overflow:hidden">1111111111Lorem
+                                            ipsum dolor
+                                            sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corporis
+                                            aliquid
+                                            soluta rerum quaerat dolorum iste reprehenderit nesciunt consequatur non
+                                            consequuntur voluptas unde ea id, est ducimus doloribus adipisci
+                                            assumenda.1111111111</span>
+                                        <span class="b2-span2">2019-9-8 18:26</span>
+                                        <span class="b2-span3">已回复</span>
+                                        <span onclick="abc(0)" class="b2-span4-b">
+                                            <span>展开问题+</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="m-b3-b2">
+                                    <p>
+                                        <span class="b2-span1-b" style="height:40px;overflow:hidden">Lorem ipsum dolor
+                                            sit amet
+                                            consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                                            modi
+                                            consequatur neque fugiat omnis voluptatem voluptas, nisi ratione libero
+                                            reiciendis
+                                            animi quae laboriosam voluptate repellat suscipit. Harum aperiam modi
+                                            est.</span>
+                                        <span class="b2-span2">2019-9-6 9:26</span>
+                                        <span class="b2-span3">已回复</span>
+                                        <span onclick="abc(1)" class="b2-span4-b">
+                                            <span>展开问题+</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="m-b3-b2">
+                                    <p>
+                                        <span class="b2-span1-b" style="height:40px;overflow:hidden">Lorem ipsum dolor
+                                            sit amet
+                                            consectetur adipisicing elit. Beatae vitae dolorum tempore autem iure
+                                            eligendi omnis
+                                            obcaecati aliquam. Nam temporibus a ipsum eum officia deleniti labore magni
+                                            dolores
+                                            error assumenda? Lorem ipsum dolor. Incidunt eos, quasi voluptates iusto
+                                            consequuntur quidem repellat.</span>
+                                        <span class="b2-span2">2019-9-5 14:30</span>
+                                        <span class="b2-span3">已回复</span>
+                                        <span onclick="abc(2)" class="b2-span4-b">
+                                            <span>展开问题+</span>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="m-b3-b2">
+                                    <p>
+                                        <span class="b2-span1-b" style="height:40px;overflow:hidden">Lorem ipsum dolor
+                                            sit amet
+                                            consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Aut ab quia impedit? Eveniet modi provident eos assumenda laudantium
+                                            mollitia
+                                            consectetur velit sit quo! Quod, quas iure expedita blanditiis quos id?
+                                        </span>
+                                        <span class="b2-span2">2019-8-3 14:30</span>
+                                        <span class="b2-span3">已回复</span>
+                                        <span onclick="abc(3)" class="b2-span4-b">
+                                            <span>展开问题+</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </el-tab-pane>
+                </el-tabs>
+            </div>
+
+
+            <footer class="footer">
+                <div class="bbox">
+                    <div class="b1">
+                        <span>
+                            <img src="../images/logo.png" alt="">
+                        </span>
+                        <span class="line">|</span>培养能力 塑造人才
+                    </div>
+                    <div class="b2">
+                        <a href="" class="bb1">联系我们</a>
+                        <a href="" class="bb2">意见反馈</a>
+                        <a href="" class="bb3">名师风采</a>
+                    </div>
+                    <div class="b3">Copyright 2017 联想 (北京) 有限公司 京ICP备11035381 | 京公网安备110108007970号</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+
+        //新建反馈显示隐藏
+        var fkButton = document.getElementsByClassName("b3-t-right");
+        var fkContent = document.getElementsByClassName("m-b3-top2");
+        var b3Bottom = document.getElementsByClassName("m-b3-bottom");
+        var spanText = document.getElementsByClassName("spanText");
+
+        for (var i = 0; i < fkButton.length; i++) {
+            fkButton[i].onclick = (e) => {
+                console.log('11');
+                if (fkContent[0].style.display == "block") {
+                    fkContent[0].style.display = "none";
+                    b3Bottom[0].style.display = "block";
+                    spanText[0].innerHTML = "新建反馈";
+                } else {
+                    fkContent[0].style.display = "block";
+                    b3Bottom[0].style.display = "none";
+                    spanText[0].innerHTML = "我的意见";
+                }
+            }
+        }
+
+
+
+        //多行文本收起展开
+        var sTitle = document.querySelectorAll(".b2-span4-b");
+        var sText = document.querySelectorAll(".b2-span1-b");
+        function abc(index) {
+            for (var i = 0; i < sTitle.length; i++) {
+                if (i == index) {
+                    if (sText[i].style.overflow == "hidden") {
+                        sText[i].style.height = 'auto';
+                        sText[i].style.overflow = 'visible';
+                    } else {
+                        sText[i].style.height = '40px';
+                        sText[i].style.overflow = 'hidden';
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+<!-- import Vue before Element -->
+<script src="../packages/vue.js"></script>
+<!-- import JavaScript -->
+<script src="../packages/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                url: 'images/user03.png'
+            }
+        }
+    })
+</script>
+
+</html>

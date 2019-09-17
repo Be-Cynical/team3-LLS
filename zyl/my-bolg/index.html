@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>my-bolg</title>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="packages/index.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- 顶部链接 -->
+        <el-row>
+            <el-col :span="6" class="nav">
+                <el-link href="#" class="navLink">首页</el-link>
+            </el-col>
+            <el-col :span="6" class="nav">
+                <el-link href="list.html" class="navLink" style="color: mediumpurple">文章列表</el-link>
+            </el-col>
+            <el-col :span="6" class="nav">
+                <el-link href="login.html" class="navLink" style="color:mediumpurple">登录</el-link>
+            </el-col>
+            <el-col :span="6" class="nav">
+                <el-link href="register.html" class="navLink">注册</el-link>
+            </el-col>
+        </el-row>
+
+        <!-- 个人中心--轮播图 -->
+        <el-row>
+            <!-- 左边个人中心 -->
+            <el-col :span="5" class="my-center">
+                <el-row>
+                    <el-col :span="10" :offset="1" class="c-m-left">
+                        <el-image :src="url" class="c-leftImg"></el-image>
+                    </el-col>
+                    <el-col :span="9" class="c-m-center">
+                        <p class="m-c-p1">
+                            zyl<span>LV.6</span>
+                        </p>
+                        <p class="m-c-p2">
+                            修改资料<i class="el-icon-arrow-right"></i>
+                        </p>
+                    </el-col>
+                    <el-col :span="3" class="c-m-right">
+                        <i class="el-icon-message"></i>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="22" :offset="1" class="c-m-botom">
+                        <p class="m-b-p1">世间所有的相遇，都是久别重逢</p>
+                        <p class="m-b-p2">我不想成为一个庸俗的人。十年百年后，当我们死去，质疑我们的人同样死去，后人看到的是裹足不前、原地打转的你，还是一直奔跑、走到远方的我？</p>
+                    </el-col>
+                </el-row>
+            </el-col>
+            <!-- 右边轮播图 -->
+            <el-col :span="19" class="lunbo">
+                <el-row>
+                    <el-col :span="24" class="l-col">
+                        <el-carousel :interval="3000" type="card" height="300px">
+                            <el-carousel-item v-for="item in 4" :key="item"></el-carousel-item>
+                        </el-carousel>
+                    </el-col>
+                </el-row>
+            </el-col>
+        </el-row>
+
+        <!-- 中间导航 -->
+        <el-row>
+            <el-col :span="3" :offset="3" class="c-nav1">
+                <el-button type="primary" style="width:50px;height:50px;" icon="el-icon-service" circle></el-button>
+                <p>歌单</p>
+            </el-col>
+            <el-col :span="3" offset="2" class="c-nav2">
+                <el-button type="primary" style="width:50px;height:50px;" icon="el-icon-tickets" circle></el-button>
+                <p>文章</p>
+            </el-col>
+            <el-col :span="3" offset="2" class="c-nav3">
+                <el-button type="primary" style="width:50px;height:50px;" icon="el-icon-tickets" circle></el-button>
+                <p>技术</p>
+            </el-col>
+            <el-col :span="3" offset="2" class="c-nav4">
+                <el-button type="primary" style="width:50px;height:50px;" icon="el-icon-camera-solid" circle>
+                </el-button>
+                <p>摄影</p>
+            </el-col>
+        </el-row>
+
+        <!-- 文章列表 -->
+        <el-row>
+            <el-col :span="17" :offset="1">
+                <el-row>
+                    <el-col :sapn="24" class="List-top">
+                        <i>我的记忆</i>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="5" class="list-img">
+                        <img src="images/09.jpg" alt="">
+                    </el-col>
+                    <el-col :span="17" class="list-ps">
+                        <p class="list-p1">Lorem, ipsum dolor.</p>
+                        <p class="list-p2">2019-9-10</p>
+                        <p class="list-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam
+                            provident enim ab!Debitis sit eius aspernatur maxime quod quidem, repellat commodi iure ex
+                            doloribus eveniet praesentium itaque ipsum iusto! </p>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="5" class="list-img">
+                        <img src="images/09.jpg" alt="">
+                    </el-col>
+                    <el-col :span="17" class="list-ps">
+                        <p class="list-p1">Lorem, ipsum dolor.</p>
+                        <p class="list-p2">2019-9-10</p>
+                        <p class="list-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam
+                            provident enim ab!Debitis sit eius aspernatur maxime quod quidem, repellat commodi iure ex
+                            doloribus eveniet praesentium itaque ipsum iusto! </p>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="5" class="list-img">
+                        <img src="images/09.jpg" alt="">
+                    </el-col>
+                    <el-col :span="17" class="list-ps">
+                        <p class="list-p1">Lorem, ipsum dolor.</p>
+                        <p class="list-p2">2019-9-10</p>
+                        <p class="list-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam
+                            provident enim ab!Debitis sit eius aspernatur maxime quod quidem, repellat commodi iure ex
+                            doloribus eveniet praesentium itaque ipsum iusto! </p>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="5" class="list-img">
+                        <img src="images/09.jpg" alt="">
+                    </el-col>
+                    <el-col :span="17" class="list-ps">
+                        <p class="list-p1">Lorem, ipsum dolor.</p>
+                        <p class="list-p2">2019-9-10</p>
+                        <p class="list-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam
+                            provident enim ab!Debitis sit eius aspernatur maxime quod quidem, repellat commodi iure ex
+                            doloribus eveniet praesentium itaque ipsum iusto! </p>
+                    </el-col>
+                </el-row>
+            </el-col>
+
+            <!-- 侧边栏 -->
+            <el-col :span="5" style="border:2px solid#243356;margin-top: 30px;padding: 10px;">
+                <el-row>
+                    <el-col :span="24" style="min-height: 150px;padding-left:20%">
+                        <img src="images/user01.jpg" alt="" style="width: 150px;height: 100%;">
+                    </el-col>
+                    <el-col :span="24">
+                        <p style="color:rgb(153,196,225);height: 35px;line-height:35px;text-align:center">zyl</p>
+                        <p style="color:rgb(64, 141, 206);height: 35px;line-height:35px;text-align:center">Lorem, ipsum dolor.</p>
+                        <p style="color:mediumpurple;text-align:center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                            sequi modi hic, officiis ab illo blanditiis alias magni aliquam quia reiciendis, molestiae
+                            incidunt, aliquid quaerat distinctio. Aperiam assumenda et dolorem.</p>
+                        <el-col>
+                </el-row>
+            </el-col>
+        </el-row>
+
+        <!-- 底部 -->
+        <el-row>
+            <el-col :span="24" 
+                style="margin-top:100px;min-height:100px;line-height: 100px;text-align: center;background:rgb(16,32,58);color:rgb(153,196,225);">
+                @2019 zyl blog Lorem ipsum dolor sit amet consectetur.</el-col>
+        </el-row>
+        
+
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="packages/vue.js"></script>
+<!-- import JavaScript -->
+<script src="packages/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                url: 'images/user03.png'
+            }
+        }
+    })
+</script>
+
+</html>
