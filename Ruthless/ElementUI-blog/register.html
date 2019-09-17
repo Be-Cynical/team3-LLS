@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <title>登录</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: url(./i/2.jpg) #000 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .col {
+            animation: col 2s;
+        }
+
+        @keyframes col {
+            0% {
+                color: rgba(255, 255, 255, 0)
+            }
+
+            100% {
+                color: #ffffff
+            }
+        }
+
+        .main {
+            animation: main 2s;
+            margin-left: 34%;
+        }
+
+        @keyframes main {
+            0% {
+                opacity: 0;
+                margin-left: 0;
+            }
+
+            100% {
+                opacity: 0.9;
+                margin-left: 34%;
+                background-color: #ccc;
+            }
+        }
+
+        .user {
+            animation: user 3s;
+        }
+
+        @keyframes user {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .email {
+            animation: email 4s;
+        }
+
+        @keyframes email {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .password {
+            animation: password 5s;
+        }
+
+        @keyframes password {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .login {
+            animation: login 6s;
+        }
+
+        @keyframes login {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-header style="height: 180px; margin-top: 10px;">
+                <el-row>
+                    <el-col class="col" :span="19" style="color: #ffffff;">欢迎来到我的世界</el-col>
+                    <el-col :span="5">
+                        <el-link :underline="false" href="login.html">
+                            <el-button type="primary" plain>登录</el-button>
+                        </el-link>
+                        <el-link :underline="false" href="index.html">
+                            <el-button type="primary" plain>返回首页</el-button>
+                        </el-link>
+                    </el-col>
+                </el-row>
+            </el-header>
+            <el-main class="main"
+                style="height: 351px; width: 500px; background-color: #ccc; opacity:0.9; border-radius: 10px;">
+                <div>
+                    <el-form style="text-align: center; margin-top: 30px;">
+                        <div class="user"
+                            style="font-size: 2rem; font-weight: bold; color: rgb(23, 137, 172); margin-bottom: 20px;">
+                            用户注册</div>
+                        <el-form-item>
+                            <el-input class="email" style="width: 350px;" placeholder="请输入邮箱~"
+                                suffix-icon="el-icon-user-solid"></el-input>
+                        </el-form-item>
+                        <el-form-item>
+                            <el-input class="password" style="width: 350px;" placeholder="请输入密码~"
+                                suffix-icon="el-icon-lock"></el-input>
+                        </el-form-item>
+                        <el-form-item>
+                            <el-button class="login" style="width: 350px;" type="primary">注册</el-button>
+                        </el-form-item>
+                    </el-form>
+                </div>
+            </el-main>
+            <el-footer style="height: 180px; text-align: center; color: #ffffff">
+                <p style="margin-top: 140px;">© 2019 AllMobilize, Inc. Licensed under MIT license.</p>
+            </el-footer>
+        </el-container>
+    </div>
+</body>
+
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        }
+    })
+</script>
+
+</html>
