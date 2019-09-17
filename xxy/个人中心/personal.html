@@ -1,0 +1,316 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="personal.css">
+    <style>
+        .selected{
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="course">
+        <!-- 顶部导航栏 -->
+        <nav class="nav">
+            <div>
+                <ul class="nav-c">
+                    <li><a href="">我的专业</a></li>
+                    <li><a href="">我的课程</a></li>
+                    <li><a href="">我的成长</a></li>
+                    <li><a href="">我的参与</a></li>
+                    <li><a href="">我的考试</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><img src="images/news.png" alt=""></li>
+                    <li><a href="">张兴海</a></li>
+                    <li>
+                        <span class="spana"><img src="images/problem.png" alt=""></span>
+                        <span class="spanb">在线提问</span>
+                    </li>
+                    <li><img src="images/quit.png" title="退出登录" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <!-- 课程标题标题部分 -->
+        <header class="header">
+            <div class="h-top">
+                <div>
+                    <span>个人中心</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 中间部分框架 -->
+        <section>
+            <!-- 公共标题部分 -->
+            <ul class="gary" id="tab-head">
+                <li class="selected">基本资料</li>
+                <li>修改资料</li>
+                <li>意见反馈</li>
+            </ul>
+            <!-- <div id="app">
+            <el-tabs v-model="activeName" @tab-click="handleClick">
+                <el-tab-pane label="基本资料" name="first">基本资料</el-tab-pane>
+                <el-tab-pane label="修改资料" name="second">修改资料</el-tab-pane>
+                <el-tab-pane label="意见反馈" name="third">意见反馈</el-tab-pane>
+            </el-tabs>
+            </div> -->
+            <!-- 中间切换页面部分 -->
+            <div class="main" id="tab-content">
+                <!-- 基本资料页面 -->
+                <div id="page1" class="page" style="display:block">
+                    <div class="pa-top">||基本资料</div>
+                    <div class="pa1-tab">
+                        <div class="tab1">
+                            <p><span>姓名</span> <span>夏晓宇</span></p>
+                            <p><span>工号</span> <span>20192205139</span></p>
+                            <p><span>出生日期</span> <span>2019-10-01</span></p>
+                            <p><span>邮箱</span> <span>2418018840@qq.com</span></p>
+                        </div>
+                        <div class="tab2">
+                            <p><span>职位</span> <span>学生</span></p>
+                            <p><span>性别</span> <span>女</span></p>
+                            <p><span>身份证号</span> <span>152527**********24</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 修改密码页面 -->
+                <div id="page2" class="page" style="display:none">
+                    <div class="pa2-top">
+                        <strong class="sle">---</strong>
+                        <span class="spanLeft" src="images/passwd.png" alt="">
+                            修改密码
+                        </span>
+                        <strong class="sri">---</strong>
+                        <strong>---</strong>
+                        <span src="images/arrow.png" alt="">
+                            完成
+                        </span>
+                        <strong>---</strong>
+                    </div>
+                    <div class="pa2-bottom">
+                        <form action="">
+                            <p>请输入您的原密码</p>
+                            <div>
+                                <input type="password" placeholder="请在这里输入您的原密码" style="margin:10px 0;">
+                            </div>
+                            <p>请输入您的新密码</p>
+                            <div>
+                                <input type="password" placeholder="请在这里输入您的新密码" style="margin: 10px 0 5px 0;">
+                            </div>
+                            <span>
+                                <i>*</i>密码为8-20位，必须使用大小写字母、数字与特殊符号的组合
+                            </span>
+                            <div>
+                                <input type="password" placeholder="请在这里输入您的新密码" style="margin: 15px 0 10px 0;">
+                            </div>
+                            <button type="submit" class="button">确认修改</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- 意见反馈页面 -->
+                <div id="page3" class="page" style="display:none">
+                    <div class="pa3-top">
+                        <div class="pa3-yijian">||我的意见反馈</div>
+                        <button src="images/bj.png" class="xinjian">新建反馈</button>
+                    </div>
+                    <div class="pa3-bottom" id="active1" style="display:none">
+                            <p>
+                                <span>*问题分类:</span>
+                                <select name="" id="">
+                                    <option value="0">用户体验1</option>
+                                    <option value="1">用户体验2</option>
+                                    <option value="2">用户体验3</option>
+                                    <option value="3">用户体验4</option>
+                                </select>
+                            </p>
+                            <p>
+                                <span class="c-m-pod">*意见:</span>
+                                <input type="text" placeholder="请在这里输入你的意见">
+                            </p>
+                            <p>
+                                <span class="c-m-pod">问题说明:</span>
+                                <input type="text" placeholder="问题背景、问题介绍等详细信息">
+                            </p>
+                            <input type="text">
+                            <button>提交问题</button>
+                    </div>
+                    <div class="pa3-bottom" id="active" style="display:block">
+                        <div class="pa3-b1">
+                            <p>
+                                <span>意见</span>
+                                <span>发布时间</span>
+                                <span>状态</span>
+                                <span>操作</span>
+                            </p>
+                        </div>
+                        <div class="pa3-b2">
+                            <p>
+                                <span>Lorem ipsum dolor sit amet.</span>
+                                <span>2019-9-8 20:26</span>
+                                <span>未回复</span>
+                                <span class="pa3-span2">
+                                    <span>删除</span>
+                                    <span>编辑</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="pa3-b2">
+                            <p>
+                                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, ullam!</span>
+                                <span>2019-9-8 18:26</span>
+                                <span>未回复</span>
+                                <span class="pa3-span2">
+                                    <span>删除</span>
+                                    <span>编辑</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="pa3-b2">
+                            <p>
+                                <span>Lorem ipsum dolor sit.</span>
+                                <span>2019-9-8 18:26</span>
+                                <span>已回复</span>
+                                <span class="pa3-span2">
+                                    <span>删除</span>
+                                    <span>编辑</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="pa3-b2">
+                            <p>
+                                <span id="span1">Lorem ipsum dolor sit amet consectetur.</span>
+                                <span>2019-9-6 9:26</span>
+                                <span>已回复</span>
+                                <span class="pa3-span">
+                                    <span> 展开页面</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="pa3-b2">
+                            <p>
+                                <span id="span1">Lorem ipsum dolor. Incidunt eos, quasi voluptates iusto consequuntur quidem
+                                    repellat.</span>
+                                <span>2019-9-5 14:30</span>
+                                <span>已回复</span>
+                                <span class="pa3-span">
+                                    <span>展开页面</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="pa3-b2">
+                            <p>
+                                <span id="span1">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                                <span>2019-8-3 14:30</span>
+                                <span>已回复</span>
+                                <span class="pa3-span">
+                                    <span>展开页面</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="bbox">
+                    <div class="b1">
+                        <span>
+                            <img src="images/logo.png" alt="">
+                        </span>
+                        <span class="line">|</span>
+                        培养能力 塑造人才
+                    </div>
+                    <div class="b2">
+                        <a href="" class="bb1">联系我们</a>
+                        <a href="" class="bb2">意见反馈</a>
+                        <a href="" class="bb3">名师风采</a>
+                    </div>
+                    <div class="b3">Copyright 2017 联想 (北京) 有限公司 京ICP备11035381 | 京公网安备110108007970号</div>
+                </div>
+            </div>
+        </section>
+        <script>
+             // 意见反馈切换 js
+            //找到意见反馈div
+            // 绑定单击事件
+            // 需要进行判断  判断条件  可以设置布尔值当作切换条件 或者 按钮中的文字
+                    // 显示第一个div（有显示列表的） 还是显示第二个（有提交表单的）
+
+
+            // 新建反馈功能
+            var newBtn = document.getElementsByClassName('xinjian');
+            for(var i = 0;i<newBtn.length;i++){
+                newBtn[i].onclick = (e) => {
+                    var active = document.getElementById("active");
+                    var active1 = document.getElementById("active1");
+                    if(active1.style.display=="none") {
+                        active.style.display='none';
+                        active1.style.display='block';
+                        e.target.innerHTML="新建反馈";
+                    }else {
+                        active.style.display='block';
+                        active1.style.display='none';
+                        e.target.innerHTML="我的意见"
+                    }
+                }
+            }
+
+
+
+
+            //  第一部分，tab标签切换
+             var tabs = document.querySelectorAll('#tab-head>li');
+             var contents = document.querySelectorAll('#tab-content>div');
+            //  console.log(tabs);
+            //  console.log(contents);
+
+             (function changeTab() {
+                 for (var i = 0; i < tabs.length; i++) {
+                     tabs[i].onclick = showTab;
+                 }
+             })();
+             function showTab() {
+                 for (var i = 0; i < tabs.length; i++) {
+                     if (tabs[i] === this) {
+                         tabs[i].className = "selected";
+                         contents[i].style.display = 'block';
+                     } else {
+                         tabs[i].className = "";
+                         contents[i].style.display = 'none';
+                     }
+                 }
+             }
+
+            // 意见反馈展开问题
+            // 布局：每一个意见反馈结构必须相同
+            // js实现：
+            // 1 首先找到所有展开问题div 的集合
+            // 2 通过for循环为其绑定单击事件
+            // 3 进行判断到底是展开、收起 判断条件：div的内容
+            // 修改 div的内容(展开部分显示或隐藏)
+            // 展开部分：显示或隐藏
+             var div1=document.querySelectorAll('.pa3-span>span');
+             var span = document.getElementById("span1");
+             for(var i=0;i<div1.length;i++){
+                 if(div1[i] == this) {
+                     div1[i].onclick = (e) => {
+                        div1.style.overflow="display";
+                        div1.style.height="70px";
+                    }
+                 }else{
+                        div1.style.overflow="hidden";
+                        div1.style.height="40px";
+                 }
+             }
+
+        </script>
+</body>
+
+</html>
