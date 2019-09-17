@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+  <div id="app">
+      <el-header>
+        <div class="log-re">
+            <a href="register.html"><button type="button" class="am-btn am-btn-default am-radius log-button">注册</button></a>
+            <a href="index.html"><button type="button" class="am-btn am-btn-default am-radius log-button">返回首页</button></a>
+        </div>
+    </el-header>
+
+    <el-main>
+        <el-input v-model="input"  placeholder="邮箱"></el-input>
+        <el-input placeholder="密码" v-model="input"  show-password></el-input>
+        <el-row>
+            <el-button type="primary">登录</el-button>
+        </el-row>
+    </el-main>
+  </div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { 
+            input:""
+         }
+      }
+    })
+  </script>
+</html>

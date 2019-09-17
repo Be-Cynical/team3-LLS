@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        .el-header {
+            color: #333;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .el-footer {
+            background-color: rgb(5, 5, 5);
+            color: rgb(250, 246, 246);
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .el-aside {
+            background-color: #D3DCE6;
+            color: #333;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .el-main {
+            color: #333;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        body>.el-container {
+            margin-bottom: 40px;
+        }
+
+        .el-container:nth-child(5) .el-aside,
+        .el-container:nth-child(6) .el-aside {
+            line-height: 260px;
+        }
+
+        .el-container:nth-child(7) .el-aside {
+            line-height: 320px;
+        }
+
+        .bq {
+            text-align: left;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <h2>我的个人博客</h2>
+            </el-header>
+            <el-main>
+                <el-divider></el-divider>
+                <div class="bq">
+                    <span><a href="01.html">首页</a></span>
+                    <span><a href="01.html">文章列表</a></span>
+                    <span><a href="02.html">登录</a></span>
+                    <span><a href="01.html">注册</a></span>
+                </div>
+                <el-divider></el-divider>
+
+                <h1>所有文章</h1>
+                <el-divider></el-divider>
+                <div class="wz">
+                    <ul>
+                        <li>
+                            <span class="am-u-sm-8 am-u-md-6 timeline-span">
+                                <a href="">君埋泉下泥销骨，我寄人间雪满头</a></span>
+                            <span class="am-u-sm-4 am-u-md-2 ">2015/10/18</span>
+                        </li>
+                        <li>
+                            <span class="am-u-sm-8 am-u-md-6 timeline-span">
+                                <a href="">不为无益之事，何以遣有涯之生。</a></span>
+                            <span class="am-u-sm-4 am-u-md-2 ">2015/10/10</span>
+                        </li>
+                        <li>
+                            <span class="am-u-sm-8 am-u-md-6 timeline-span">
+                                <a href="">一想到你，我这张丑脸上就泛起微笑</a></span>
+                            <span class="am-u-sm-4 am-u-md-2 ">2015/10/5</span>
+                        </li>
+                        <li>
+                            <span class="am-u-sm-8 am-u-md-6 timeline-span">
+                                <a href="">君埋泉下泥销骨，我寄人间雪满头</a></span>
+                            <span class="am-u-sm-4 am-u-md-2 ">2015/10/18</span>
+                        </li>
+                        <li>
+                            <span class="am-u-sm-8 am-u-md-6 timeline-span">
+                                <a href="">不为无益之事，何以遣有涯之生。</a></span>
+                            <span class="am-u-sm-4 am-u-md-2 ">2015/10/10</span>
+                        </li>
+                        <li>
+                            <span class="am-u-sm-8 am-u-md-6 timeline-span">
+                                <a href="">一想到你，我这张丑脸上就泛起微笑</a></span>
+                            <span class="am-u-sm-4 am-u-md-2 ">2015/10/5</span>
+                        </li>
+                    </ul>
+                </div>
+                <el-divider></el-divider>
+
+                <div class="block">
+                        <el-pagination
+                          layout="prev, pager, next"
+                          :total="50">
+                        </el-pagination>
+                </div>
+            </el-main>
+            <el-footer>© 2015 AllMobilize, Inc. Licensed under MIT license. Made with love By LWXYFER</el-footer>
+        </el-container>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {}
+        }
+    })
+</script>
+
+</html>
