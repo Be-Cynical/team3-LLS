@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:rgb(41, 141, 41);
+}
+
+/* 顶部标题 */
+.nav{
+    min-height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background:rgb(13,24,49);
+}
+.nav .navLink{
+    color:rgb(64, 141, 206);
+    font-size: 16px;
+    letter-spacing: 5px;  /*字间距*/
+}
+
+/*个人中心*/
+.my-center{
+    height: 350px;
+    background:rgb(16,32,58)
+}
+.c-m-left{
+    margin-top:15px;
+}
+.c-leftImg{
+    height:120px;
+    width:120px;
+    border-radius:50%;
+}
+.c-m-center{
+    margin-top:15px;
+    padding-left:10px;
+    min-height:120px;
+}
+.m-c-p1{
+    margin-top:30px;
+    height:30px;
+    line-height:30px;
+    color:rgb(219, 232, 255);
+    font-size:20px;
+    letter-spacing:2px;
+}
+.m-c-p1 span{
+    margin-left:3px;
+    font-size:10px;
+    padding:2px;
+    border:1px solid orange;
+    border-radius:5px;
+    color:orange;
+    box-sizing: border-box;
+}
+.m-c-p2{
+    margin-top: 5px;
+    height:20px;
+    line-height:20px;
+    color:rgb(153,196,225);
+    font-size:14px;
+}
+.m-c-p2 i{
+    color:rgb(153,196,225);
+}
+.c-m-right{
+    margin-top:15px;
+    min-height:120px;
+    line-height:120px;
+    text-align: center;
+}
+.el-icon-message{
+    color:rgb(153,196,225);
+    font-size:25px;
+    cursor: pointer;
+}
+.c-m-botom{
+    padding:10px;
+    box-sizing: border-box;
+    height:160px;
+}
+.m-b-p1{
+    height:30px;
+    font-size:15px;
+    line-height:30px;
+    text-align:center;
+    color:rgb(209, 140, 211)
+}
+.m-b-p2{
+    text-align:center;
+    color:rgb(65,122,197);
+    font-size: 16px;
+}
+
+/*轮播图*/
+.lunbo{
+    height: 350px;
+    padding: 15px;
+    padding-right: 15px;
+    background:rgb(16,32,58);
+}
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+}
+.el-carousel__item:nth-child(2n) {
+    background-image: url(../images/csgo.jpg);
+    background-size: 100%;
+}
+  
+.el-carousel__item:nth-child(2n+1) {
+    background-image: url(../images/csgo1.jpg);
+    background-size: 100%;
+}
+
+
+/*中间导航nav*/
+.c-nav1{
+    text-align: center;
+    background:rgb(16,32,58);
+}
+.c-nav1 p{
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color:rgb(219, 232, 255);
+}
+.c-nav2{
+
+    text-align: center;
+    background: rgb(16,32,58);
+}
+.c-nav2 p{
+    height:30px;
+    line-height: 30px;
+    color:rgb(219, 232, 255);
+    text-align: center;
+}
+.c-nav3{
+
+    text-align: center;
+    background:rgb(16,32,58);
+}
+.c-nav3 p{
+    height:30px;
+    line-height: 30px;
+    color:rgb(219, 232, 255);
+    text-align: center;
+}
+.c-nav4{
+
+    text-align: center;
+    background:rgb(16,32,58);
+}
+.c-nav4 p{
+    height:30px;
+    line-height: 30px;
+    color:rgb(219, 232, 255);
+    text-align: center;
+}
+
+/*文章列表*/
+.List-top{
+    min-height:50px;
+    line-height:50px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.List-top i{
+    color:rgb(219, 232, 255);
+    letter-spacing:15px;
+    font-size:20px;
+}
+.list-img{
+    min-height:200px;
+    margin-bottom: 15px;
+}
+.list-img img{
+    width:100%;
+    height:100%;
+}
+.list-ps{
+    border-bottom:2px solid #243356;
+    min-height: 200px;
+    padding-left:10px;
+    margin-bottom: 15px;
+}
+.list-ps p{
+    /* color:rgb(153,196,225); */
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.list-p1{
+    color:rgb(153,196,225);
+    height: 30px;
+    line-height:30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.list-p2{
+    color:rgb(64, 141, 206);
+    height: 30px;
+    line-height:30px;
+    font-size: 14px;
+   
+}
+.list-p3{
+    color:rgb(31, 28, 31);
+    
+    width:500px;
+    font-size: 16px;
+}

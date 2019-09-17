@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<style>
+    .el-header,
+    .el-footer {
+        background-color: #B3C0D1;
+        color: #333;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .el-main {
+        background-color: #E9EEF3;
+        color: #333;
+        text-align: center;
+        /* line-height: 160px; */
+    }
+
+    .el-row {
+        margin-bottom: 20px;
+    }
+
+    .el-col {
+        border-radius: 4px;
+    }
+    .row-bg {
+        padding: 10px 0;
+        background-color: #f9fafc;
+    }
+
+    .about {
+        background: #FFF url(images/28.jpg) no-repeat top center;
+        overflow: hidden;
+    }
+
+    .avatar {
+        margin: 80px auto 20px;
+        width: 100px
+    }
+
+    .avatar img {
+        width: 100px;
+        border-radius: 50%
+    }
+
+    .abname {
+        color: #3f3f3f;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center
+    }
+</style>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-header>
+                <el-row>
+                    <el-col :span="12">
+                        <div class="grid-content bg-purple">个人博客</div>
+                    </el-col>
+                    
+                    <el-col :span="12">
+                        <div class="grid-content bg-purple">
+                            <el-row :gutter="20">
+                                <el-col :span="6">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">首页</el-link>
+                                    </div>
+                                </el-col>
+                                <el-col :span="6">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">文章列表</el-link>
+                                    </div>
+                                </el-col>
+                                <el-col :span="6">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">登录</el-link>
+                                    </div>
+                                </el-col>
+                                <el-col :span="6">
+                                    <div class="grid-content bg-purple">
+                                        <el-link :underline="false">注册</el-link>
+
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-header>
+            <el-main>
+                <el-row :gutter="20">
+                    <el-col :span="2">
+                        <div class="grid-content bg-purple"></div>
+                    </el-col>
+                    <el-col :span="20">
+                        <div class="grid-content bg-purple">
+                            <el-row :gutter="20">
+                                <el-col :span="16">
+                                    <div class="grid-content bg-purple">
+                                        <el-row :gutter="20">
+                                            <el-col :span="12" :offset="6">
+                                                <div class="grid-content bg-purple">所有文章</div>
+                                            </el-col>
+                                            <div v-for="">
+                                                <el-row :gutter="20">
+                                                    <el-col :span="16">
+                                                        <div class="grid-content bg-purple">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</div>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <div class="grid-content bg-purple">2018-02-15</div>
+                                                    </el-col>
+                                                </el-row>
+                                                <el-row :gutter="20">
+                                                    <el-col :span="16">
+                                                        <div class="grid-content bg-purple">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</div>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <div class="grid-content bg-purple">2018-02-15</div>
+                                                    </el-col>
+                                                </el-row>
+                                                <el-row :gutter="20">
+                                                    <el-col :span="16">
+                                                        <div class="grid-content bg-purple">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</div>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <div class="grid-content bg-purple">2018-02-15</div>
+                                                    </el-col>
+                                                </el-row>
+                                                <el-row :gutter="20">
+                                                    <el-col :span="16">
+                                                        <div class="grid-content bg-purple">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</div>
+                                                    </el-col>
+                                                    <el-col :span="8">
+                                                        <div class="grid-content bg-purple">2018-02-15</div>
+                                                    </el-col>
+                                                </el-row>
+                                            </div>
+                                        </el-row>
+                                        <el-pagination background layout="prev, pager, next" :total="1000">
+                                        </el-pagination>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                        </div>
+                    </el-col>
+                    <el-col :span="2">
+                        <div class="grid-content bg-purple"></div>
+                    </el-col>
+                </el-row>
+            </el-main>
+            <el-footer>Footer</el-footer>
+        </el-container>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        }
+    })
+</script>
+
+</html>
