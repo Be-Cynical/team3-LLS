@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: auto;
+    width: auto;
+    background-image: url(images/06denglu.jpg);
+    background-size: 100%;
+}
+
+/* 左上角提示 */
+.tishi{
+    position: relative;
+    height: 34px;
+}
+.tishi p{
+    background-color: rgba(150, 164, 224, .17);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    line-height: 34px;
+    padding: 0 11px;
+    text-align: center;
+    font-size: 14px;
+    color: #eaedf9;
+}
+.tishi p a{
+    color: #6bd3fe;
+    text-decoration-color: #6bd3fe;
+}
+
+/* 中间部分 */
+.header{
+    width: 15%;
+    height: 100px;
+    margin: 0 auto;
+}
+.header img {
+    width: 100%;
+}
+.header p {
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: -10px;
+}
+
+.main{
+    background: #f2f7fa;
+    width: 380px;
+    height: 320px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-left: -190px;
+    margin-top: -160px;
+    padding: 20px;
+    box-sizing: border-box
+}
+.main p{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    color: #606060;
+}
+.main>div{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* user和password */
+.loginitem{
+    height: 35px;
+    line-height: 35px;
+    margin-top:10px;
+    border-bottom: 1px solid #e1e6e9;
+    box-sizing: border-box;
+}
+.loginitem input{
+    height: 35px;
+    background: none;
+    outline:none;
+    border: none;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #444444;
+}
+/* 小图标 */
+.smallicon{
+    width: 16px;
+    height: 16px;
+}
+
+/* 登录按钮 */
+.login-btn{
+    height: 35px;
+    margin-top: 50px;
+}
+.login-btn input{
+    border: none;
+    background: #48B6D3;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px; /*圆角*/
+    color: #fff;
+}
+.findpwd{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #8A8A8A;
+}
+.findpwd span:nth-child(1){
+    float: left;
+}
+.findpwd span:nth-child(2){
+    float: right;
+}
+.findpwd span a{
+    color: #1380f9;
+    text-decoration: none;
+}
+
+/* 底部 */
+.footer{
+    position:fixed;
+    width:100%;
+    left:0; 
+    bottom:0;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.14);
+    color: 	#A9A9A9;
+    margin-bottom: 10px;
+}
+.footer p{
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    font-family: "iconfont";
+    text-align: center;
+    color: #9196b3;
+}
+.footer p a{
+    color: #bebfd1;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 43px;
+}
+.footer p a:hover{
+    color: #fff;
+}
